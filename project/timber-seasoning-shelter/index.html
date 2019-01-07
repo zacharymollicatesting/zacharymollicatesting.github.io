@@ -1,0 +1,661 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Timber Seasoning Shelter / Design + Make</title>
+  
+  <meta name="description" content="Headquartered at the Architectural Association's Hooke Park campus, Design + Make explores fabrication and design at the intersection of craft knowledge, innovative technologies and natural materials">
+  
+  <link rel="stylesheet" href="/assets/css/style-1.css">
+  <!-- ico -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+  <link rel="manifest" href="/ico/site.webmanifest">
+  <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#fff200">
+  <link rel="shortcut icon" href="/ico/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/ico/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  
+  
+  <meta property="site_name" content="Design + Make">
+
+  
+  
+  
+  
+  <!-- Async fonts -->
+  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</noscript>
+
+  
+</head>
+
+
+  <body>
+    <!-- Include Header and Navigation -->
+
+    <header>
+  <a href="/">
+    <div class="title-small">
+      <img style="margin:0; padding: 0; line-height: 0;" src="/assets/dm-logo-web.png">
+    </div>
+  </a>
+  <nav class="">
+    <div id="nav-container">
+      <div class="toggle-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          
+          <div class="span12">
+            <!---->
+            <h1>About</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/about/">Design + Make</a></li>
+
+                    
+                    <li><a href="/hooke-park/">Hooke Park</a></li>
+
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/contact/">Contact</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Programme</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/projects">Projects</a></li>
+
+                    
+                    <li><a href="/course-structure">Course Structure</a></li>
+
+                    
+                    <li><a href="/apply/">Apply</a></li>
+
+                    
+                    <li><a href="/faq">FAQ</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Social</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="http://instagram.com/aadesignandmake">Instagram</a></li>
+
+                    
+                    <li><a href="http://vimeo.com/hookepark">Vimeo</a></li>
+
+                    
+                    <li><a href="https://www.facebook.com/designandmake">Facebook</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Visiting School</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/summerbuild/">SummerBuild</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+      </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="container">
+
+      <!-- WIDE HEADER FOR PAGES WITH META -->
+
+      
+
+      
+<style>
+.wide-header {
+  margin-bottom: 2rem;
+}
+</style>
+      
+
+
+      <!-- PAGE MENU is populated here -->
+      
+
+      <!-- Page Content -->
+      <!-- WIDE BANNER FROM META -->
+<div class="background-image-block wide-header" style="background-image: url(/assets/project/timber-seasoning-shelter/cover.jpg);"></div>
+
+<div class="content">
+  <div class="row">
+    <div class="span12">
+      <h1 class="">Timber Seasoning Shelter</h1>
+    </div>
+    <div class="span12">
+        <p>The Timber Seasoning Shelter is a 150sqm canopy which provides rain-shelter for the stacked air-drying of Hooke Park sourced timber for use in ongoing projects. The canopy is constructed from a reciprocal grid of steam-bent lamellas fabricated from Hooke Park’s beech trees (fagus sylvatica). The annual thinning of European Beech trees planted in the 1950s creates large volumes of timber with value only as firewood, despite being one of the strongest and hardest species grown in England. Identifying a long tradition of its use in steam bent furniture, the students began to research innovative methods for using Beech in an architectural construction.</p>
+
+
+    </div>
+    <!-- PROJECT FLICKITY SLIDER -->
+    <div class="span12">
+      <div class="main-carousel" data-flickity='{ "pageDots": false, "wrapAround": true, "pauseAutoPlayOnHover": true, "autoPlay": 2000, "imagesLoaded": true, "bgLazyLoad": 1 }'>
+        
+        
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/00_TSS_ValerieBennett.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/01_TSS_ValerieBennett.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/02_TSS_ValerieBennett.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/03_TSS.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/05_TSS_ValerieBennett.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/06_TSS.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/07_TSS_ValerieBennett.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/08_TSS_ValerieBennett.JPG)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/09_TSS_ValerieBennett.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/10_TSS.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/11_TSS.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/12_TSS_ValerieBennett.JPG)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/timber-seasoning-shelter/4_TSS_ValerieBennett.jpg)"></div>
+            
+        
+            
+        
+            
+        
+      </div>
+    </div>
+    <!-- PROJECT FLICKITY SLIDER -->
+    <div class="span12">
+      <p>With Workshop Manager Charlie Corrywright, the team developed a steam bending machine capable of producing unique components using adjustable pneumatic rams. This allowed each 2m-long plank to be bent to a unique curvature according to its place within the structure (which contains a total of 148 unique paired elements). The hexagonal reciprocal pattern meant that a continuous structure could be built out of relatively short pieces of timber – the maximum length of reasonable quality that could be viably extracted from the trees felled.</p>
+
+<p>Large patches of the roof were pre-assembled inside of the Big Shed, and then craned into position. The PVC-polyester membrane is tensioned by ‘push-ups’ formed by extensions of the bolts that connect the beech lamella elements and by tension lines connected to a perimeter beam of doubly-curved glue-laminated elements.</p>
+
+    </div>
+    <div style="clear: both;"></div>
+    <!-- Web link or other -->
+    
+    <!-- Vimeo Code -->
+    <div class="span12" style="padding-bottom:2em;">
+        
+          <h2>Project Film</h2>
+          <div class='embed-container'>
+              <iframe src='http://player.vimeo.com/video/218598060' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div>
+          
+        
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT DETAILS -->
+<div class="project-details inverted">
+  <div class="content">
+    <div class="">
+      <div class="row small">
+        <!-- List students with links -->
+        
+        
+          <div class="span12 three-col">
+            
+              <span>
+                <p>
+                  <b>STUDENTS</b><br>
+                    
+                    
+                      
+                        Glen Stellmacher
+                      
+                      <!-- break except last -->
+                      <br>
+                    
+                    
+                      
+                        Kawit Ko-Udomvit
+                      
+                      <!-- break except last -->
+                      <br>
+                    
+                    
+                      
+                        Meghan Dorrian
+                      
+                      <!-- break except last -->
+                      <br>
+                    
+                    
+                      
+                        Omri Menashe
+                      
+                      <!-- break except last -->
+                      
+                    
+                </p>
+              </span>
+            
+
+          <!-- List staff with links -->
+            
+              <span><p><b>TUTORS</b><br>
+                  
+                  
+                    
+                    
+                      <a href="/people/martin-self">Martin Self</a>
+                    
+                    (Co-director)
+                    <br>
+                  
+                  
+                    
+                        Charley Brentnall
+                    
+                    
+                    <br>
+                  
+                  
+                    
+                        Stewart Dodd
+                    
+                    
+                    
+                  
+                </p></span>
+            
+
+          <!-- HOOKE STAFF CREDIT -->
+            
+              <span><p><b>Hooke Park Team</b><br>
+                  
+                  
+                    
+                    
+                      <a href="/people/charlie-corry-wright">Charlie Corry Wright</a>
+                      <!-- Comma Except Last -->
+                      
+                      (Workshop Manager)
+                    <br>
+                  
+                  
+                    
+                        Jack Hawker
+                      <!-- Comma Except Last -->
+                      
+                      
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/edward-coe">Edward Coe</a>
+                      <!-- Comma Except Last -->
+                      
+                      (Technical Coordinator)
+                    
+                  
+                </p></span>
+            
+          <!-- Additional credits -->
+            
+              <span style="color:white!important;">
+                <p><b>CREDITS</b><br>
+                
+                  Arup (Engineering)
+                  <br>
+                
+                  Architen Landrell (Membrane supply)
+                  <br>
+                
+                  Bath University (Timber Testing)
+                  <br>
+                
+                  Valerie Bennett (Photography)
+                  
+                
+              </p>
+              </span>
+            
+            <!-- PROJECT DETAILS -->
+            
+              <span style="color:white!important;">
+                <p>
+                  <b>DETAIL</b><br>
+                  Year: 2014
+                </p>
+              </span>
+            
+          </div>
+          
+          
+          <!-- link to ID on /project-credits/ -->
+          
+          
+          <!-- Project Credits link -->
+          <div class="span12">
+            <p style="margin-top: 2em;"><a class="small-grey-button" href="/project-credits#timber-seasoning-shelter"><b>FULL PROJECT CREDITS</b></a></p>
+          </div>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- FOOTER BANNER -->
+<a href="/projects/">
+  <div class="banner">
+    <h4 class="tc">
+        Return to Project Index
+    </h4>
+  </div>
+</a>
+
+<!-- NEXT-PREV PROJECT  -->
+<!-- Next/Prev Project -->
+
+
+
+
+
+
+
+
+<div class="more-items">
+  <div class="project-grid">
+
+      
+      
+
+      <div class="span6">
+          <a href="/project/south-lodge/">
+          <div class="prev-project background-image-block project-grid-item" style="background-image: url(/assets/project/south-lodge/thumb.jpg)">
+            <h3>South Lodge</h3>
+          </div>
+          </a>
+      </div>
+      
+<!-- Check if end of index and sub 0-->
+      
+      
+      
+      
+
+      <div class="span6">
+        <a href="/project/accumulating-watchtower/">
+          <div class="next-project background-image-block project-grid-item" style="background-image: url(/assets/project/accumulating-watchtower/thumb.jpg)">
+              <h3>Accumulating Watchtower</h3>
+          </div>
+        </a>
+      </div>
+
+  </div>
+</div>
+
+
+<!-- ADD FLICKITY CSS + JS -->
+<link rel="stylesheet" href="/assets/css/flickity.css" media="screen">
+<script src="/assets/js/flickity.js"></script>
+
+      <!-- End Page Content -->
+
+
+    </div>
+
+
+    <!-- Add Footer -->
+
+    
+
+
+<div style="clear:both;"></div>
+
+<footer>
+
+
+
+    <div class="hatch " style="margin-bottom: 2em;">
+  <div class="content" style="max-width: 1200px;">
+    <div class="yellow ">
+
+    Fabricating experimental architectures at the <a href="http://aaschool.ac.uk">AA</a>’s satellite <a href="/hooke-park/" target="blank">Hooke Park</a> campus.
+  </div>
+</div>
+
+
+</div>
+
+
+<div style="clear:both;"></div>
+
+
+<div class="content">
+  <div class="tl small">
+    <div class="row">
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!---->
+        <h5 style="">About</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/about/">Design + Make</a><br>
+                
+                <a style="text-transform:uppercase;" href="/hooke-park/">Hooke Park</a><br>
+                
+                <a style="text-transform:uppercase;" href="/team/">Team</a><br>
+                
+                <a style="text-transform:uppercase;" href="/contact/">Contact</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Programme</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/projects">Projects</a><br>
+                
+                <a style="text-transform:uppercase;" href="/course-structure">Course Structure</a><br>
+                
+                <a style="text-transform:uppercase;" href="/apply/">Apply</a><br>
+                
+                <a style="text-transform:uppercase;" href="/faq">FAQ</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Social</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="http://instagram.com/aadesignandmake">Instagram</a><br>
+                
+                <a style="text-transform:uppercase;" href="http://vimeo.com/hookepark">Vimeo</a><br>
+                
+                <a style="text-transform:uppercase;" href="https://www.facebook.com/designandmake">Facebook</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Visiting School</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/summerbuild/">SummerBuild</a><br>
+                
+          
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+</footer>
+
+
+    <!-- Confirm extent of Jquery use -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Call additional JS for Pages -->
+
+    
+
+
+
+
+
+
+
+  </body>
+</html>
