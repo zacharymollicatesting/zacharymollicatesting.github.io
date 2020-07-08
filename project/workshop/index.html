@@ -1,0 +1,554 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Workshop / AA Design + Make</title>
+  
+  <meta name="description" content="Headquartered at the Architectural Association's Hooke Park campus, Design + Make explores fabrication and design at the intersection of craft knowledge, innovative technologies and natural materials">
+  
+  <link rel="stylesheet" href="/assets/css/style-1.css">
+  <!-- ico -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+  <link rel="manifest" href="/ico/site.webmanifest">
+  <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#fff200">
+  <link rel="shortcut icon" href="/ico/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/ico/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta property="site_name" content="Design + Make">
+
+
+
+
+
+  <!-- Async fonts -->
+  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</noscript>
+
+  
+</head>
+
+
+  <body>
+    <!-- Include Header and Navigation -->
+
+    <header>
+  <a href="/">
+    <div class="title-small">
+      <img style="margin:0; padding: 0; line-height: 0;" src="/assets/dm-logo-web.png">
+    </div>
+  </a>
+  <nav class="">
+    <div id="nav-container">
+      <div class="toggle-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          
+          <div class="span12">
+            <!---->
+            <h1>About</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/about/">Design + Make</a></li>
+
+                    
+                    <li><a href="/hooke-park/">Hooke Park</a></li>
+
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/contact/">Contact</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Programme</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/projects">Projects</a></li>
+
+                    
+                    <li><a href="/course-structure">Course Structure</a></li>
+
+                    
+                    <li><a href="/apply/">Apply</a></li>
+
+                    
+                    <li><a href="/faq">FAQ</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Social</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="http://instagram.com/aadesignandmake">Instagram</a></li>
+
+                    
+                    <li><a href="http://vimeo.com/hookepark">Vimeo</a></li>
+
+                    
+                    <li><a href="https://www.facebook.com/designandmake">Facebook</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Visiting School</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/hooke-park-build/">Hooke Park Build</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+      </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="container">
+
+      <!-- WIDE HEADER FOR PAGES WITH META -->
+
+      
+
+      
+<style>
+.wide-header {
+  margin-bottom: 2rem;
+}
+</style>
+      
+
+
+      <!-- PAGE MENU is populated here -->
+      
+
+      <!-- Page Content -->
+      <!-- WIDE BANNER FROM META -->
+<div class="background-image-block wide-header" style="background-image: url(/assets/project/workshop/cover.jpg);"></div>
+
+<div class="content">
+  <div class="row">
+    <div class="span12">
+      <h1 class="">Workshop</h1>
+    </div>
+    <div class="span12">
+        <p>Designed by Richard Burton of ABK and Frei Otto, with the engineers Buro Happold, Hooke Park’s workshop uses spruce thinnings to form a vault from a series of compression arches. The result is a remarkable long-span enclosure built using low-value material from the surrounding forest. Now 25 years old, the building has needed remarkably little maintenance given its experimental nature. It is heavily used throughout the year by AA students.</p>
+
+    </div>
+    <!-- PROJECT FLICKITY SLIDER -->
+    <div class="span12">
+      <div class="main-carousel" data-flickity='{ "pageDots": false, "wrapAround": true, "pauseAutoPlayOnHover": true, "autoPlay": 2000, "imagesLoaded": true, "bgLazyLoad": 1 }'>
+        
+        
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/workshop/00_Workshop.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/workshop/01_Workshop.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/workshop/02_Workshop_HookeArchive.jpg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/workshop/03_Workshop_HookeArchive.jpg)"></div>
+            
+        
+            
+        
+            
+        
+      </div>
+    </div>
+    <!-- PROJECT FLICKITY SLIDER -->
+    <div class="span12">
+      
+<p>The 600sqm workshop building consists of three timber shells. Two of the three bays of the roof accommodate a well equipped joinery workshop while the third contains studio and office facilities. The arches that form each bay are arrayed in a fan-like arrangement and are of spruce thinnings of typically 100-150mm diameter. Initally straight, and fixed at their bases, pair of these elements were bent downwards to form the arching curve and a central third element spliced in at the crown.</p>
+
+    </div>
+    <div style="clear: both;"></div>
+    <!-- Web link or other -->
+    
+    <!-- Vimeo Code -->
+    <div class="span12" style="padding-bottom:2em;">
+        
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT DETAILS -->
+<div class="project-details inverted">
+  <div class="content">
+    <div class="">
+      <div class="row small">
+        <!-- List students with links -->
+        
+        
+          <div class="span12 three-col">
+            
+
+          <!-- List staff with links -->
+            
+
+          <!-- HOOKE STAFF CREDIT -->
+            
+              <span><p><b>Hooke Park Team</b><br>
+                  
+                  
+                    
+                        William Moorwood
+                      <!-- Comma Except Last -->
+                      
+                      
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/christopher-sadd">Christopher Sadd</a>
+                      <!-- Comma Except Last -->
+                      
+                      (Head Forester)
+                    
+                  
+                </p></span>
+            
+          <!-- Additional credits -->
+            
+              <span style="color:white!important;">
+                <p><b>CREDITS</b><br>
+                
+                  Frei Otto (Architecture)
+                  <br>
+                
+                  ABK (Architecture)
+                  <br>
+                
+                  Buro Happold (Architecture)
+                  
+                
+              </p>
+              </span>
+            
+            <!-- PROJECT DETAILS -->
+            
+              <span style="color:white!important;">
+                <p>
+                  <b>DETAIL</b><br>
+                  Year: 1989
+                </p>
+              </span>
+            
+          </div>
+
+
+          <!-- link to ID on /project-credits/ -->
+          
+
+          <!-- Project Credits link -->
+          <div class="span12">
+            <p style="margin-top: 2em;"><a class="small-grey-button" href="/project-credits#workshop"><b>FULL PROJECT CREDITS</b></a></p>
+          </div>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- FOOTER BANNER -->
+
+<div style="clear:both;"></div>
+
+<div class="banner" style="background: #f1f1f1"><a href="/projects/" class="" style="text-transform:uppercase;padding-bottom:.4em;text-align:center!important;width:100%;margin:0;">
+    <h4>Return to Project Index</h4>
+  </a>
+  <div style="clear:both;"></div>
+</div>
+
+
+
+
+
+<!-- NEXT-PREV PROJECT  -->
+
+
+<!-- Next/Prev Project -->
+
+
+
+
+
+
+<div class="more-items">
+  <div class="project-grid">
+
+      
+      
+
+      <div class="span6">
+          <a href="/project/aa-summer-pavilions/">
+          <div class="prev-project background-image-block project-grid-item" style="background-image: url(/assets/project/aa-summer-pavilions/thumb.jpg)">
+            <h3>AA Summer Pavilions</h3>
+          </div>
+          </a>
+      </div>
+
+<!-- Check if end of index and sub 0-->
+      
+      
+      
+      
+
+      <div class="span6">
+        <a href="/project/prototype-house/">
+          <div class="next-project background-image-block project-grid-item" style="background-image: url(/assets/project/prototype-house/thumb.jpg)">
+              <h3>Prototype House</h3>
+          </div>
+        </a>
+      </div>
+
+  </div>
+</div>
+
+
+<!-- ADD FLICKITY CSS + JS -->
+<link rel="stylesheet" href="/assets/css/flickity.css" media="screen">
+<script src="/assets/js/flickity.js"></script>
+
+      <!-- End Page Content -->
+
+
+    </div>
+
+
+    <!-- Add Footer -->
+
+    
+
+
+<div style="clear:both;"></div>
+
+<footer>
+
+
+
+    <div class="hatch " style="margin-bottom: 2em;">
+  <div class="content" style="max-width: 1200px;">
+    <div class="yellow ">
+
+    Fabricating experimental architectures at the <a href="http://aaschool.ac.uk">AA</a>’s satellite <a href="/hooke-park/" target="blank">Hooke Park</a> campus.
+  </div>
+</div>
+
+
+</div>
+
+
+<div style="clear:both;"></div>
+
+
+<div class="content">
+  <div class="tl small">
+    <div class="row">
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!---->
+        <h5 style="">About</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/about/">Design + Make</a><br>
+                
+                <a style="text-transform:uppercase;" href="/hooke-park/">Hooke Park</a><br>
+                
+                <a style="text-transform:uppercase;" href="/team/">Team</a><br>
+                
+                <a style="text-transform:uppercase;" href="/contact/">Contact</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Programme</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/projects">Projects</a><br>
+                
+                <a style="text-transform:uppercase;" href="/course-structure">Course Structure</a><br>
+                
+                <a style="text-transform:uppercase;" href="/apply/">Apply</a><br>
+                
+                <a style="text-transform:uppercase;" href="/faq">FAQ</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Social</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="http://instagram.com/aadesignandmake">Instagram</a><br>
+                
+                <a style="text-transform:uppercase;" href="http://vimeo.com/hookepark">Vimeo</a><br>
+                
+                <a style="text-transform:uppercase;" href="https://www.facebook.com/designandmake">Facebook</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Visiting School</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/hooke-park-build/">Hooke Park Build</a><br>
+                
+          
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+</footer>
+
+
+    <!-- Confirm extent of Jquery use -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Call additional JS for Pages -->
+
+    
+
+
+
+
+
+
+
+  </body>
+</html>

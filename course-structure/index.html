@@ -1,0 +1,459 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Course Structure / AA Design + Make</title>
+  
+  <meta name="description" content="Design + Make is an advanced study Masters programme in which the core aim is to develop advanced critical capacity in the intellectual and material processes of contemporary architecture." />
+  
+  <link rel="stylesheet" href="/assets/css/style-1.css">
+  <!-- ico -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+  <link rel="manifest" href="/ico/site.webmanifest">
+  <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#fff200">
+  <link rel="shortcut icon" href="/ico/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/ico/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta property="site_name" content="Design + Make">
+
+
+
+
+
+  <!-- Async fonts -->
+  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</noscript>
+
+  
+</head>
+
+
+  <body>
+    <!-- Include Header and Navigation -->
+
+    <header>
+  <a href="/">
+    <div class="title-small">
+      <img style="margin:0; padding: 0; line-height: 0;" src="/assets/dm-logo-web.png">
+    </div>
+  </a>
+  <nav class="">
+    <div id="nav-container">
+      <div class="toggle-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          
+          <div class="span12">
+            <!---->
+            <h1>About</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/about/">Design + Make</a></li>
+
+                    
+                    <li><a href="/hooke-park/">Hooke Park</a></li>
+
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/contact/">Contact</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Programme</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/projects">Projects</a></li>
+
+                    
+                    <li><a href="/course-structure">Course Structure</a></li>
+
+                    
+                    <li><a href="/apply/">Apply</a></li>
+
+                    
+                    <li><a href="/faq">FAQ</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Social</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="http://instagram.com/aadesignandmake">Instagram</a></li>
+
+                    
+                    <li><a href="http://vimeo.com/hookepark">Vimeo</a></li>
+
+                    
+                    <li><a href="https://www.facebook.com/designandmake">Facebook</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Visiting School</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/hooke-park-build/">Hooke Park Build</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+      </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="container">
+
+      <!-- WIDE HEADER FOR PAGES WITH META -->
+
+      
+        
+          <div class="background-image-block wide-header" style="background-image: url(/assets/cover/wakeford-robot.jpg);"><h1></h1></div>
+          
+      
+
+      
+<style>
+.wide-header {
+  margin-bottom: 2rem;
+}
+</style>
+      
+
+
+      <!-- PAGE MENU is populated here -->
+      
+        <div class="content">
+          <div class="row">
+              <div class="span12 page-menu">
+                  <h2>Programme</h2>
+                  <!--<hr>-->
+                  
+                      
+                  
+                      
+                          
+                          <div class="">
+                              <ul>
+                                  
+                                  
+                                  
+                                      
+                                          <!-- 'inactive' class exists to hide these if wanted -->
+                                          <li class=""><a href="/projects">Projects</a></li>
+                                      
+                                  
+                                  
+                                  
+                                      
+                                          <li class="active"><a href="/course-structure">Course Structure</a></li>
+                                      
+                                  
+                                  
+                                  
+                                      
+                                          <!-- 'inactive' class exists to hide these if wanted -->
+                                          <li class=""><a href="/apply/">Apply</a></li>
+                                      
+                                  
+                                  
+                                  
+                                      
+                                          <!-- 'inactive' class exists to hide these if wanted -->
+                                          <li class=""><a href="/faq">FAQ</a></li>
+                                      
+                                  
+                              </ul>
+                          </div>
+                          
+                      
+                  
+                      
+                  
+                      
+                  
+              </div>
+          </div>
+        </div>
+      
+
+      <!-- Page Content -->
+      <div class="content">
+
+  <div class="row">
+  <div class="span12">
+    <p class="large">Two courses are offered: a 16-month MArch and a 12-month MSc</p>
+    <p>Design + Make is an advanced study Masters programme in which the core aim is to develop advanced critical capacity in the intellectual and material processes of contemporary architecture. This global aim can be divided in two fields: firstly, the
+      accumulation of disciplinary knowledge in the specific theories and practices of architecture that relate to its making, and secondly the development of advanced skills in design, research, analysis, and their communication. The programme explicitly
+      aims to maximise the learning opportunities presented by the actual realisation of design intent.</p>
+    <p>The MArch and MSc courses are structured around a series of hands-on design-make studio projects of increasing scale and sophistication leading to the student construction contributing to a campus building (MArch) or full-scale timber prototype (MSc). These
+      are complemented by seminar courses and workshops in forestry, woodworking and both traditional and contemporary building crafts, and by lectures and events at Hooke Park and Beford Square.</p>
+    <p>The MSc and MArch share taught components in the first two terms. After the second term, the programme bifurcates, with the MSc students completing their project and dissertation for submission in September, whilst the MArch students continue with
+      project construction through the summer and then thesis completion for submission the following January.</p>
+    <img src="/assets/course-structure-diagram.png">
+  </div>
+  <div style="clear:both;"></div>
+  <div class="span12">
+
+    <h3>Introduction Studios</h3>
+    <p>Term 1's introduction studios establish the technical skill-set and key design methodologies for the programme. This includes taught classes and workshops to build the essential skills toolkit in six areas: (1) analogue making; (2) digital modelling;
+      (3) 3D scanning; (4) CAD/CAM; (5) robotic fabrication; and (6) documentation through film making.</p>
+    <p>In parallel, studio projects are structured initially as individual workshop-based design-make exercises in which these skills are deployed and developed. These lead into the design, fabrication and construction, in small teams, of 1:1 inhabitable
+      structures within the Hooke Park landscape that introduce the material processes of full-scale experimental construction and enable students to develop design approaches driven by considerations of landscape and material. These projects allow speculative
+      testing of design methodologies and fabrication techniques to develop further in the Main Projects.</p>
+
+
+    <h3>Seminar Courses</h3>
+    <p>The Seminar Courses (Term 1 + 2) are delivered in weekly sessions and focus on the cultural theory of making as design; timber properties and technologies; critical engagement with landscape; and thesis development. Together they provide
+      the theoretical framework for the project work and the intellectual foundation for the written theses/dissertations.</p>
+
+      <h3>MArch Main Project</h3>
+      <p>For the MArch students the Main Project work is on <a href="/projects"> buildings and prototypes</a> for the Hooke Park campus. Working in teams, students design, fabricate and build permanent full-scale constructions through which research propositions
+        can be tested by their actual realisation in architecture. The range of research topics within these projects can encompass individual interests in environmental and construction technologies, alternative forms of design practice, or issues relating
+        to Hooke Park’s topographic and cultural landscape. The constructed project is recorded in portfolio documents and also used as primary evidence in the individually written MArch Thesis that makes a propositional argument concerning the practice
+        and realisation of architecture.</p>
+
+    <h3>MSc Main Project</h3>
+    <p>For the MSc students the Main Project is an individual research programme of experimentation and prototyping that leads to a full-scale <a href="/projects">experimental timber prototype</a> designed to test innovative architectural applications of
+      timber. Student are encouraged to radically exploit the woodland and fabrication resources of Hooke Park, with the aim of developing advanced knowledge and critical understanding of emerging fabrication and timber technologies. The MSc Dissertation
+      is a technical report on the research undertaken including speculative analysis of its architectural applicability.</p>
+
+
+
+  </div>
+</div>
+
+
+  <!-- padding added to give space at bottom of regular pages -->
+
+  <div style="clear:both;padding-bottom:2em;"></div>
+
+</div>
+
+      <!-- End Page Content -->
+
+
+    </div>
+
+
+    <!-- Add Footer -->
+
+    
+
+
+<div style="clear:both;"></div>
+
+<footer>
+
+
+
+    <div class="hatch " style="margin-bottom: 2em;">
+  <div class="content" style="max-width: 1200px;">
+    <div class="yellow ">
+
+    Fabricating experimental architectures at the <a href="http://aaschool.ac.uk">AA</a>’s satellite <a href="/hooke-park/" target="blank">Hooke Park</a> campus.
+  </div>
+</div>
+
+
+</div>
+
+
+<div style="clear:both;"></div>
+
+
+<div class="content">
+  <div class="tl small">
+    <div class="row">
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!---->
+        <h5 style="">About</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/about/">Design + Make</a><br>
+                
+                <a style="text-transform:uppercase;" href="/hooke-park/">Hooke Park</a><br>
+                
+                <a style="text-transform:uppercase;" href="/team/">Team</a><br>
+                
+                <a style="text-transform:uppercase;" href="/contact/">Contact</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Programme</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/projects">Projects</a><br>
+                
+                <a style="text-transform:uppercase;" href="/course-structure">Course Structure</a><br>
+                
+                <a style="text-transform:uppercase;" href="/apply/">Apply</a><br>
+                
+                <a style="text-transform:uppercase;" href="/faq">FAQ</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Social</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="http://instagram.com/aadesignandmake">Instagram</a><br>
+                
+                <a style="text-transform:uppercase;" href="http://vimeo.com/hookepark">Vimeo</a><br>
+                
+                <a style="text-transform:uppercase;" href="https://www.facebook.com/designandmake">Facebook</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Visiting School</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/hooke-park-build/">Hooke Park Build</a><br>
+                
+          
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+</footer>
+
+
+    <!-- Confirm extent of Jquery use -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Call additional JS for Pages -->
+
+    
+
+
+
+
+
+
+
+  </body>
+</html>

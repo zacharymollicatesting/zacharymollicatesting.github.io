@@ -1,0 +1,648 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Moving Within Architecture / AA Design + Make</title>
+  
+  <meta name="description" content="Headquartered at the Architectural Association's Hooke Park campus, Design + Make explores fabrication and design at the intersection of craft knowledge, innovative technologies and natural materials">
+  
+  <link rel="stylesheet" href="/assets/css/style-1.css">
+  <!-- ico -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+  <link rel="manifest" href="/ico/site.webmanifest">
+  <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#fff200">
+  <link rel="shortcut icon" href="/ico/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/ico/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta property="site_name" content="Design + Make">
+
+
+
+
+
+  <!-- Async fonts -->
+  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</noscript>
+
+  
+</head>
+
+
+  <body>
+    <!-- Include Header and Navigation -->
+
+    <header>
+  <a href="/">
+    <div class="title-small">
+      <img style="margin:0; padding: 0; line-height: 0;" src="/assets/dm-logo-web.png">
+    </div>
+  </a>
+  <nav class="">
+    <div id="nav-container">
+      <div class="toggle-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          
+          <div class="span12">
+            <!---->
+            <h1>About</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/about/">Design + Make</a></li>
+
+                    
+                    <li><a href="/hooke-park/">Hooke Park</a></li>
+
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/contact/">Contact</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Programme</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/projects">Projects</a></li>
+
+                    
+                    <li><a href="/course-structure">Course Structure</a></li>
+
+                    
+                    <li><a href="/apply/">Apply</a></li>
+
+                    
+                    <li><a href="/faq">FAQ</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Social</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="http://instagram.com/aadesignandmake">Instagram</a></li>
+
+                    
+                    <li><a href="http://vimeo.com/hookepark">Vimeo</a></li>
+
+                    
+                    <li><a href="https://www.facebook.com/designandmake">Facebook</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+          <div class="span12">
+            <!--<hr>-->
+            <h1>Visiting School</h1>
+              
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/hooke-park-build/">Hooke Park Build</a></li>
+
+                    
+
+                  </ul>
+                </div>
+              
+          </div>
+          
+      </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="container">
+
+      <!-- WIDE HEADER FOR PAGES WITH META -->
+
+      
+
+      
+<style>
+.wide-header {
+  margin-bottom: 2rem;
+}
+</style>
+      
+
+
+      <!-- PAGE MENU is populated here -->
+      
+
+      <!-- Page Content -->
+      <!-- WIDE BANNER FROM META -->
+<div class="background-image-block wide-header" style="background-image: url(/assets/project/moving-within-architecture/cover.jpg);"></div>
+
+<div class="content">
+  <div class="row">
+    <div class="span12">
+      <h1 class="">Moving Within Architecture</h1>
+    </div>
+    <div class="span12">
+        <p>Standardised design practices depend highly on assumptions about the human body and its abilities – this leads to overly prescribed and planar spaces which fail to engage users with the richness of their spatial potential. This dissertation explores approaches to design which encourage movement, play and exploration with(in) the built environment. The work was developed by MSc Ciro Romer in parallel to contributions to the <a href="/project/woodland-cabin/">Woodland Cabin</a>.</p>
+
+    </div>
+    <!-- PROJECT FLICKITY SLIDER -->
+    <div class="span12">
+      <div class="main-carousel" data-flickity='{ "pageDots": false, "wrapAround": true, "pauseAutoPlayOnHover": true, "autoPlay": 2000, "imagesLoaded": true, "bgLazyLoad": 1 }'>
+        
+        
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/00_CiroRomer-CabinInside.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/01_CiroRomer-BigShedWall.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/02_CiroRomer-vlcsnap-2018-12-13-10h03m35s117.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/03_CiroRomer-vlcsnap-2018-12-13-10h01m51s179.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/04_CiroRomer-vlcsnap-2018-12-13-10h02m32s110.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/05_CiroRomer-CiroClimbingTree.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/07_CiroRomer-MotionTracking.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/08_CiroRomer-Romer_Thesis.jpeg)"></div>
+            
+        
+            
+                <div class="carousel-cell" style="background-image: url(/assets/project/moving-within-architecture/09_CiroRomer-Frederic_Kiesler.jpeg)"></div>
+            
+        
+            
+        
+            
+        
+      </div>
+    </div>
+    <!-- PROJECT FLICKITY SLIDER -->
+    <div class="span12">
+      
+<p>The research examines artistic practice, sports and non-standard ways of building, to discover potential opportunities for an approach to designing that is not based on standardised assumptions but instead focuses on providing potentials for movement beyond the ground plane. Based on the explorations in the context of Hooke Park, it becomes clear that elements of architecture often act as a rigid boundary and restrictive guideline for singular in their use, rather than a source of potential for interaction. Advocating for the design of spaces which embrace re-interpretability en non-prescriptive potentials for spatial exploration.</p>
+
+<p>The dissertation concludes with a list of design guidelines, to serve as an alternative approach to architectural design.</p>
+
+<p><em>Image Credit: Last slideshow image from Frederick John Kiesler</em></p>
+
+    </div>
+    <div style="clear: both;"></div>
+    <!-- Web link or other -->
+    
+    <!-- Vimeo Code -->
+    <div class="span12" style="padding-bottom:2em;">
+        
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT DETAILS -->
+<div class="project-details inverted">
+  <div class="content">
+    <div class="">
+      <div class="row small">
+        <!-- List students with links -->
+        
+        
+          <div class="span12 three-col">
+            
+              <span>
+                <p>
+                  <b>STUDENTS</b><br>
+                    
+                    
+                      
+                        Ciro Romer
+                      
+                      <!-- break except last -->
+                      
+                    
+                </p>
+              </span>
+            
+
+          <!-- List staff with links -->
+            
+              <span><p><b>TUTORS</b><br>
+                  
+                  
+                    
+                    
+                      <a href="/people/martin-self">Martin Self</a>
+                    
+                    (Programme Head)
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/zachary-mollica">Zachary Mollica</a>
+                    
+                    (Specialist Lecturer)
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/jack-draper">Jack Draper</a>
+                    
+                    (Make Tutor)
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/simon-withers">Simon Withers</a>
+                    
+                    (Thesis Tutor)
+                    <br>
+                  
+                  
+                    
+                        Emmanuel Vercruysse
+                    
+                    
+                    
+                  
+                </p></span>
+            
+
+          <!-- HOOKE STAFF CREDIT -->
+            
+              <span><p><b>Hooke Park Team</b><br>
+                  
+                  
+                    
+                    
+                      <a href="/people/edward-coe">Edward Coe</a>
+                      <!-- Comma Except Last -->
+                      
+                      (Technical Coordinator)
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/charlie-corry-wright">Charlie Corry Wright</a>
+                      <!-- Comma Except Last -->
+                      
+                      (Workshop Manager)
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/jean-nicolas-dackiw">Jean-Nicolas Dackiw</a>
+                      <!-- Comma Except Last -->
+                      
+                      (Robotics Developer)
+                    <br>
+                  
+                  
+                    
+                    
+                      <a href="/people/christopher-sadd">Christopher Sadd</a>
+                      <!-- Comma Except Last -->
+                      
+                      (Head Forester)
+                    
+                  
+                </p></span>
+            
+          <!-- Additional credits -->
+            
+              <span style="color:white!important;">
+                <p><b>CREDITS</b><br>
+                
+                  Jonathan Blayney (Visiting school tutor)
+                  
+                
+              </p>
+              </span>
+            
+            <!-- PROJECT DETAILS -->
+            
+              <span style="color:white!important;">
+                <p>
+                  <b>DETAIL</b><br>
+                  Year: 2019
+                </p>
+              </span>
+            
+          </div>
+
+
+          <!-- link to ID on /project-credits/ -->
+          
+
+          <!-- Project Credits link -->
+          <div class="span12">
+            <p style="margin-top: 2em;"><a class="small-grey-button" href="/project-credits#moving-within-architecture"><b>FULL PROJECT CREDITS</b></a></p>
+          </div>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- FOOTER BANNER -->
+
+<div style="clear:both;"></div>
+
+<div class="banner" style="background: #f1f1f1"><a href="/projects/" class="" style="text-transform:uppercase;padding-bottom:.4em;text-align:center!important;width:100%;margin:0;">
+    <h4>Return to Project Index</h4>
+  </a>
+  <div style="clear:both;"></div>
+</div>
+
+
+
+
+
+<!-- NEXT-PREV PROJECT  -->
+
+
+<!-- Next/Prev Project -->
+
+
+
+
+
+
+<div class="more-items">
+  <div class="project-grid">
+
+      
+      
+
+      <div class="span6">
+          <a href="/project/ground-to-crown/">
+          <div class="prev-project background-image-block project-grid-item" style="background-image: url(/assets/project/ground-to-crown/thumb.jpg)">
+            <h3>Ground to Crown</h3>
+          </div>
+          </a>
+      </div>
+
+<!-- Check if end of index and sub 0-->
+      
+      
+      
+      
+
+      <div class="span6">
+        <a href="/project/campus-scanning/">
+          <div class="next-project background-image-block project-grid-item" style="background-image: url(/assets/project/campus-scanning/thumb.jpg)">
+              <h3>Campus Scanning</h3>
+          </div>
+        </a>
+      </div>
+
+  </div>
+</div>
+
+
+<!-- ADD FLICKITY CSS + JS -->
+<link rel="stylesheet" href="/assets/css/flickity.css" media="screen">
+<script src="/assets/js/flickity.js"></script>
+
+      <!-- End Page Content -->
+
+
+    </div>
+
+
+    <!-- Add Footer -->
+
+    
+
+
+<div style="clear:both;"></div>
+
+<footer>
+
+
+
+    <div class="hatch " style="margin-bottom: 2em;">
+  <div class="content" style="max-width: 1200px;">
+    <div class="yellow ">
+
+    Fabricating experimental architectures at the <a href="http://aaschool.ac.uk">AA</a>’s satellite <a href="/hooke-park/" target="blank">Hooke Park</a> campus.
+  </div>
+</div>
+
+
+</div>
+
+
+<div style="clear:both;"></div>
+
+
+<div class="content">
+  <div class="tl small">
+    <div class="row">
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!---->
+        <h5 style="">About</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/about/">Design + Make</a><br>
+                
+                <a style="text-transform:uppercase;" href="/hooke-park/">Hooke Park</a><br>
+                
+                <a style="text-transform:uppercase;" href="/team/">Team</a><br>
+                
+                <a style="text-transform:uppercase;" href="/contact/">Contact</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Programme</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/projects">Projects</a><br>
+                
+                <a style="text-transform:uppercase;" href="/course-structure">Course Structure</a><br>
+                
+                <a style="text-transform:uppercase;" href="/apply/">Apply</a><br>
+                
+                <a style="text-transform:uppercase;" href="/faq">FAQ</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Social</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="http://instagram.com/aadesignandmake">Instagram</a><br>
+                
+                <a style="text-transform:uppercase;" href="http://vimeo.com/hookepark">Vimeo</a><br>
+                
+                <a style="text-transform:uppercase;" href="https://www.facebook.com/designandmake">Facebook</a><br>
+                
+          
+        </div>
+      
+      <div class="span3" style="margin-bottom: 1em;">
+        <!--<hr>-->
+        <h5 style="">Visiting School</h5>
+          
+                
+                <a style="text-transform:uppercase;" href="/hooke-park-build/">Hooke Park Build</a><br>
+                
+          
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+</footer>
+
+
+    <!-- Confirm extent of Jquery use -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Call additional JS for Pages -->
+
+    
+
+
+
+
+
+
+
+  </body>
+</html>
