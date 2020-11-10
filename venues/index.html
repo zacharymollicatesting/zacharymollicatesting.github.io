@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Venues - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li  class="active" >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row">
+  <div class="span12" style="max-width:800px;">
+    <h2>Explore Nova Scotia through our historic venues</h2>
+    <p>Generally speaking, tickets are always available through reservation from the MR Box Office and at the door. Feel free to contact a venue directly with any questions about the upcoming concert being held there. In addition, some venues have their own local ticket selling arrangements, such as at shops or through community organizations. Tickets remain accessible to all our concerts with an average price of $20 for general admission and $10 for students. Seats at the Cecilia's Retreat series are available by advance reservation as there is limited seating, make sure to email <a href="mailto:barbara.butler@ns.sympatico.ca">Barbara Butler</a> to save your spot!</p>
+
+  </div>
+</div>
+
+
+<!-- Sort by filter -->
+<!-- Sort by filter -->
+<!-- Sort by filter -->
+<!-- Sort by filter -->
+
+<style>
+
+ul.dropdown-menu {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+ul.dropdown-menu li {
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 1em;
+  font-size: 1.3em;
+}
+ul.dropdown-menu li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.is-checked {
+  color: red;
+}
+</style>
+
+
+<!-- Unique Categories -->
+
+
+
+
+
+
+
+
+
+<!-- Group to make unique and get count. group_by_exp working here to work with non associative array -->
+
+
+<!-- Output categories -->
+
+	<div class="row">
+		<div class="span12" style="margin-bottom: 1em;">
+				<div id="filters" class="button-group">
+					<div class="ae-dropdown dropdown">
+						<ul class="dropdown-menu ae-hide">
+							<li class="button is-checked" id="all" data-filter="*">All Communities</li>
+
+							
+              
+
+							<li class="button" id="yearlong-venues" data-filter=".yearlong-venues">
+                Yearlong Venues
+							</li>
+
+
+
+
+
+              
+              
+              
+
+							<li class="button" id="communities" data-filter=".communities">
+                Communities
+							</li>
+
+
+
+
+
+              
+              
+						</ul>
+
+
+					</div>
+				</div>
+		</div>
+</div>
+
+
+<!-- subtract number of events at location from 100 to force order to work? -->
+
+<!-- Capture all event locations including nested -->
+
+<!-- endcapture -->
+
+
+<!-- create array of location names -->
+
+<!-- sort site venues by their title -->
+
+
+
+<!-- starting to count out events white space seems to be breaking -->
+
+
+
+
+<!-- starting to count out events white space seems to be breaking -->
+
+
+
+
+
+
+
+<!-- OUTPUT -->
+<div class="row">
+  <div class="grid">
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities yearlong-venues " style="" data-category="transition" >
+
+
+
+    <a href="/venue/mahone-bay-cecilia-s-retreat/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/mahone-bay-cecilia-s-retreat.jpg)"></div>
+        <span><b>Mahone Bay</b><br>
+        <span class="small">Cecilia's Retreat</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities yearlong-venues " style="" data-category="transition" >
+
+
+
+    <a href="/venue/lunenburg-st-johns-anglican-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/lunenburg-st-john-s-anglican-church-lunenburg.jpg)"></div>
+        <span><b>Lunenburg</b><br>
+        <span class="small">St. John's Anglican Church Lunenburg</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities yearlong-venues " style="" data-category="transition" >
+
+
+
+    <a href="/venue/lunenburg-lunenburg-school-of-the-arts/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/lunenburg-lunenburg-school-of-the-arts.jpg)"></div>
+        <span><b>Lunenburg</b><br>
+        <span class="small">Lunenburg School of the Arts</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/annapolis-royal-st-george-and-standrew/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/annapolis-royal-st-george-and-st-andrew-united-church.jpg)"></div>
+        <span><b>Annapolis Royal</b><br>
+        <span class="small">St. George and St. Andrew United Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/bridgetown-dawn-oman-art-gallery/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/bridgetown-dawn-oman-art-gallery.jpg)"></div>
+        <span><b>Bridgetown</b><br>
+        <span class="small">Dawn Oman Art Gallery</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/halifax-st-davids-presbyterian-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/halifax-st-david-s-presbyterian-church.jpg)"></div>
+        <span><b>Halifax</b><br>
+        <span class="small">St. David's Presbyterian Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/tatamagouche-sharon-united-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/tatamagouche-sharon-united-church.jpg)"></div>
+        <span><b>Tatamagouche</b><br>
+        <span class="small">Sharon United Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/blue-rocks-st-barnabas/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/blue-rocks-st-barnabas-anglican-church.jpg)"></div>
+        <span><b>Blue Rocks</b><br>
+        <span class="small">St. Barnabas Anglican Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/lake-charlotte-clam-harbour/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/lake-charlotte-clam-harbour-united-church.jpg)"></div>
+        <span><b>Lake Charlotte</b><br>
+        <span class="small">Clam Harbour United Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/wolfville-manning-memorial-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/wolfville-manning-memorial-chapel.jpg)"></div>
+        <span><b>Wolfville</b><br>
+        <span class="small">Manning Memorial Chapel</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/port-williams-st-johns-anglican-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/port-williams-st-john-s-anglican-church-port-williams.jpg)"></div>
+        <span><b>Port Williams</b><br>
+        <span class="small">St. John's Anglican Church Port Williams</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/margaretsville-evergreen-theatre/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/margaretsville-evergreen-theatre.jpg)"></div>
+        <span><b>Margaretsville</b><br>
+        <span class="small">Evergreen Theatre</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/annapolis-royal-st-george-and-standrew/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/annapolis-royal-st-george-and-st-andrew-united-church.jpg)"></div>
+        <span><b>Annapolis Royal</b><br>
+        <span class="small">St. George and St. Andrew United Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/halifax-first-baptist-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/halifax-first-baptist-church.jpg)"></div>
+        <span><b>Halifax</b><br>
+        <span class="small">First Baptist Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/iona-malagawatch-united-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/iona-malagawatch-united-church.jpg)"></div>
+        <span><b>Iona</b><br>
+        <span class="small">Malagawatch United Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/parrsboro-ottawa-house-museum/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/parrsboro-ottawa-house-museum.jpg)"></div>
+        <span><b>Parrsboro</b><br>
+        <span class="small">Ottawa House Museum</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/chester-st-stephens-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/chester-st-stephen-s-church.jpg)"></div>
+        <span><b>Chester</b><br>
+        <span class="small">St. Stephen's Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/shelburne-the-osprey-arts-centre/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/shelburne-the-osprey-arts-centre.jpg)"></div>
+        <span><b>Shelburne</b><br>
+        <span class="small">The Osprey Arts Centre</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/port-maitland-bay-view-united-baptist/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/port-maitland-bay-view-united-baptist.jpg)"></div>
+        <span><b>Port Maitland</b><br>
+        <span class="small">Bay View United Baptist</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/halifax-cathedral-church-of-all-saints/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/halifax-cathedral-church-of-all-saints.jpg)"></div>
+        <span><b>Halifax</b><br>
+        <span class="small">Cathedral Church of All Saints</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/yarmouth-chebogue-united-baptist-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/yarmouth-chebogue-united-baptist-church.jpg)"></div>
+        <span><b>Yarmouth</b><br>
+        <span class="small">Chebogue United Baptist Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/yarmouth-county-museum/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/yarmouth-county-museum.jpg)"></div>
+        <span><b>Yarmouth</b><br>
+        <span class="small">County Museum</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/wedgeport-eglise-st-michel/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/wedgeport-eglise-st-michel.jpg)"></div>
+        <span><b>Wedgeport</b><br>
+        <span class="small">Eglise St-Michel</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/west-pubnico-eglise-st-pierre/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/west-pubnico-eglise-st-pierre.jpg)"></div>
+        <span><b>West Pubnico</b><br>
+        <span class="small">Eglise St-Pierre</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/greenwood-greenwood-united-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/greenwood-greenwood-united-church.jpg)"></div>
+        <span><b>Greenwood</b><br>
+        <span class="small">Greenwood United Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/lunenburg-lunenburg-academy/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/lunenburg-lunenburg-academy.jpg)"></div>
+        <span><b>Lunenburg</b><br>
+        <span class="small">Lunenburg Academy</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/saulnierville-paroisse-sacre-coeur/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/saulnierville-paroisse-sacre-coeur.jpg)"></div>
+        <span><b>Saulnierville</b><br>
+        <span class="small">Paroisse Sacre-Coeur</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/sydney-st-andrews-presbyterian-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/sydney-st-andrew-s-presbyterian-church.jpg)"></div>
+        <span><b>Sydney</b><br>
+        <span class="small">St. Andrew's Presbyterian Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/great-village-st-james-united-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/great-village-st-james-united-church.jpg)"></div>
+        <span><b>Great Village</b><br>
+        <span class="small">St. James United Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/bedford-st-johns-anglican/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/bedford-st-john-s-anglican-church-bedford.jpg)"></div>
+        <span><b>Bedford</b><br>
+        <span class="small">St. John's Anglican Church Bedford</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/truro-st-johns-anglican-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/truro-st-john-s-anglican-church-truro.jpg)"></div>
+        <span><b>Truro</b><br>
+        <span class="small">St. John's Anglican Church Truro</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/broad-cove-st-marks-anglican/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/broad-cove-st-mark-s-anglican-church.jpg)"></div>
+        <span><b>Broad Cove</b><br>
+        <span class="small">St. Mark's Anglican Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/crausetown-st-marys-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/crausetown-st-mary-s-church.jpg)"></div>
+        <span><b>Crausetown</b><br>
+        <span class="small">St. Mary’s Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item " style="" data-category="transition" >
+
+
+
+    <a href="">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/-.jpg)"></div>
+        <span><b></b><br>
+        <span class="small"></span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/cheticamp-eglise-saint-pierre/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/cheticamp-eglise-saint-pierre.jpg)"></div>
+        <span><b>Cheticamp</b><br>
+        <span class="small">Eglise Saint-Pierre</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/ste-anne-du-ruisseau-eglise-ste-anne-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/ste-anne-du-ruisseau-eglise-ste-anne-church.jpg)"></div>
+        <span><b>Ste Anne du Ruisseau</b><br>
+        <span class="small">Eglise Ste-Anne Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/halifax-kings-college-chapel/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/halifax-king-s-college-chapel.jpg)"></div>
+        <span><b>Halifax</b><br>
+        <span class="small">King's College Chapel</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/middleton-old-holy-trinity/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/middleton-old-holy-trinity-church.jpg)"></div>
+        <span><b>Middleton</b><br>
+        <span class="small">Old Holy Trinity Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/glace-bay-st-annes-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/glace-bay-st-anne-s-church.jpg)"></div>
+        <span><b>Glace Bay</b><br>
+        <span class="small">St. Anne's Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/georgeville-st-georges/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/georgeville-st-george-s-roman-catholic-church.jpg)"></div>
+        <span><b>Georgeville</b><br>
+        <span class="small">St. George's Roman Catholic Church</span></span>
+    </a>
+  </div>
+
+
+
+
+  
+  
+
+  
+
+  
+
+
+
+  <div class="span4 element-item communities " style="" data-category="transition" >
+
+
+
+    <a href="/venue/poplar-grove-st-john-the-baptist-anglican-church/">
+        <div class="background-image-span general-background" style="background-image: url(/assets/venues/poplar-grove-st-john-the-baptist-anglican-church.jpg)"></div>
+        <span><b>Poplar Grove</b><br>
+        <span class="small">St. John the Baptist Anglican Church</span></span>
+    </a>
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div style="clear:both;margin-bottom:4em;"></div>
+
+
+
+<script>
+
+  // external js: isotope.pkgd.js
+
+$ = jQuery;
+
+  // filter functions
+  var filterFns = {
+    // show if number is greater than 50
+    numberGreaterThan50: function() {
+      var number = $(this).find('.number').text();
+      return parseInt( number, 10 ) > 50;
+    },
+    // show if name ends with -ium
+    ium: function() {
+      var name = $(this).find('.name').text();
+      return name.match( /ium$/ );
+    }
+  };
+
+  function getHashFilter() {
+    // get filter=filterName
+    var matches = location.hash.match( /filter=([^&]+)/i );
+    var hashFilter = matches && matches[1];
+    return hashFilter && decodeURIComponent( hashFilter );
+  }
+
+  // init Isotope
+  var $grid = $('.grid');
+
+
+  // bind sort button click
+  $('#sorts').on( 'click', 'li', function() {
+    var sortByValue = $(this).attr('data-sort-by');
+    $grid.isotope({ sortBy: sortByValue });
+  });
+
+  // bind filter button click
+  var $filterButtonGroup = $('.button-group');
+  $filterButtonGroup.on( 'click', 'li', function() {
+    var filterAttr = $( this ).attr('data-filter');
+    // set filter in hash
+    location.hash = 'filter=' + encodeURIComponent( filterAttr );
+  });
+
+  var isIsotopeInit = false;
+
+  function onHashchange() {
+    var hashFilter = getHashFilter();
+    if ( !hashFilter && isIsotopeInit ) {
+      return;
+    }
+    isIsotopeInit = true;
+    // filter isotope
+    $grid.isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows',
+      // use filterFns
+      filter: filterFns[ hashFilter ] || hashFilter,
+  		getSortData: {
+  			name: '.name',
+  			year: '.year',
+  		}
+    });
+    // set selected class on button
+    if ( hashFilter ) {
+      $filterButtonGroup.find('.is-checked').removeClass('is-checked');
+      $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('is-checked');
+    }
+  }
+
+  $(window).on( 'hashchange', onHashchange );
+
+  // trigger event handler to init Isotope
+  onHashchange();
+
+</script>
+
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>
