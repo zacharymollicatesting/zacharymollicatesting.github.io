@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kathryn Wagner - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/kathryn-wagner.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday April 7 2018, 11:00 AM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Kathryn Wagner</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="http://www.cfmta.org/en/nova-scotia-kathryn-wagner/" target="_blank">Kathryn Wagner</a>
+
+        
+        (piano)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Cecilia's Retreat<br></b>Saturday 7 April  – 11:00 AM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+           
+
+          
+          Admission by advance reservation, please email barbara.butler@ns.sympatico.ca
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/Cecilia's+Retreat/@44.4522791,-64.3685385,12z/data=!4m8!1m2!2m1!1scecilia's+retreat!3m4!1s0x4b575f0863975fc1:0xbe8b9ec5c2df66d0!8m2!3d44.4501714!4d-64.3453891" target="_blank">1199 Oakland Rd. RR2, Mahone Bay</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

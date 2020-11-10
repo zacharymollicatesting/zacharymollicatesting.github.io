@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Thalea String Quartet - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/thalea-string-quartet.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday November 14 2020,  7:30 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Thalea String Quartet</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <p>Musique Royale is delighted to present a one night only virtual concert featuring Thalea String Quartet. The concert program highlights the quartet’s interest in exploring diverse voices and influences in classical music, including African-American composer Florence Price’s Five Folksongs in Counterpoint, and a work by Canadian Inuk composer Tanya Tagaq. The performances were recorded at Gildenhorn Recital Hall at the University of Maryland at College Park and the Music Room at the Caramoor Center for Music and the Arts in Katonah, NY.</p>
+
+<p>The virtual concert will also go behind the scenes with the Thalea String Quartet as they prepare for their first performance in over six months! After returning to in-person rehearsals after a months-long break due to COVID-19, the quartet members will speak about their experiences during the pandemic, the seismic changes taking place in the music world, and how their roles as artists and musicians have changed over the past six months. All this, while re-igniting the joy and excitement of performing some of the greatest chamber music ever composed.  The quartet is on a virtual tour with Debut Atlantic. The concert is released Saturday November 14 at 7:30 pm via Musique Royale Facebook and YouTube channels, remaining online for 24 hours.</p>
+
+<h3 id="program">Program</h3>
+
+<p>String Quartet No. 4 in D major, op. 20 - Franz Joseph Haydn (1732-1809)</p>
+
+<ul>
+  <li>Allegro di molto</li>
+  <li>Un poco Adagio affettuoso</li>
+  <li>Menuetto. Allegretto alla zingarese</li>
+  <li>Presto scherzando</li>
+</ul>
+
+<p>Sivunittinni (2015) - Tanya Tagaq* (b. 1975)</p>
+
+<p>Five Folksongs in Counterpoint - Florence Price (1887-1953)</p>
+
+<ul>
+  <li>Calvary</li>
+  <li>Clementine</li>
+  <li>Drink to Me Only with Thine Eyes</li>
+  <li>Shortnin’ Bread</li>
+  <li>Swing Low, Sweet Chariot</li>
+</ul>
+
+<h3 id="about-the-thalea-string-quartet">About the Thalea String Quartet</h3>
+
+<p>The Thalea String Quartet is dedicated to bringing timeless music to audiences from all walks of life. From living rooms to concert stages around the world, the Thalea String Quartet aims to connect with audiences on a musical, emotional, and personal level, from first-time listeners to string quartet aficionados. They are devoted to building a new and diverse audience for chamber music through innovative programming and community engagement.</p>
+
+<p>Formed in 2014 at the Zephyr International Chamber Music Festival in Courmayeur, Italy, the Thalea String Quartet has been praised for their “vibrant performance” and “sincere expressivity” (SF Classical Voice). The quartet has performed recitals across Europe, China, the United States, and Canada, and has appeared at the Kennedy Center, Massey Hall, and Weill Hall at Carnegie Hall. They were recently named the Doctoral Fellowship String Quartet-in-Residence at the University of Maryland, and have held fellowship positions at the University of Texas at Austin under the Miró Quartet, and the San Francisco Conservatory of Music. They currently serve as Associated Artists at the Queen Elisabeth Music Chapel in Waterloo, Belgium.</p>
+
+<p>The Thalea String Quartet were top prize winners at both the 2018 Fischoff National Chamber Music Competition and the 2018 Chamber Music Yellow Springs Competition, and were named the Ernst Stiefel Quartet-in-Residence at the Caramoor Center for Music and the Arts for the 2019/20 season.</p>
+
+<p>The Thalea String Quartet prides itself on the diversity of its collaborations. They have shared the stage with members of the St. Lawrence, Emerson, Alban Berg, and Borromeo quartets, and have performed alongside Lawrence Power, Gilbert Kalish, and Pulitzer Prize-winning composer Caroline Shaw. Committed to collaborating with artists of all backgrounds, the Thalea String Quartet has collaborated with San Francisco-based dance theatre company the Joe Goode Performance Group, premiered a new work by Detroit-based spoken word artist Mohogany Jones, and appeared with acclaimed Canadian band BADBADNOTGOOD at the iconic Massey Hall.</p>
+
+<p>The members of the Thalea String Quartet are dedicated educators and bring their commitment to teaching and community engagement to their frequent educational and community performances. They have performed educational concerts to students of all ages and regularly perform at care facilities and schools across the United States.</p>
+
+<p>Christopher Whitley (violin) is originally from Toronto, Ontario, Canada, Kumiko Sakamoto (violin) is from Medicine Hat, Alberta, Canada; Luis Bellorín (viola) is from Naperville, Illinois, and Titilayo Ayangade (cello) is from Cincinnati, Ohio. Christopher performs on the 1700 “Taft” Stradivari, generously on loan by the Canada Council for the Arts Musical Instrument Bank.</p>
+
+<p>The Thalea String Quartet is a fiscally-sponsored affiliate of InterMusic SF, a not-for-profit organization dedicated to small-ensemble music in the San Francisco Bay Area.   The quartet is represented in North America by Lisa Sapinkopf Artists.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="https://www.thaleastringquartet.com/" target="_blank">Thalea String Quartet</a>
+
+        : 
+
+        
+        Christopher Whitley
+        (violin),
+
+        
+        Kumiko Sakamoto
+        (violin),
+
+        
+        Luis Bellorín
+        (viola),
+
+        
+        Titilayo Ayangade
+        (cello)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. John's Anglican Church, Lunenburg<br></b>Saturday 14 November  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+           
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+<a href="https://www.youtube.com/channel/UCLIxFcPgFgX88e_vWSwgo8Q" target="_blank">Watch on YouTube</a>
+
+
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

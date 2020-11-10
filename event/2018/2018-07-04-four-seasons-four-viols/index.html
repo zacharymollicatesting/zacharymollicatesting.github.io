@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Summer Tour – 4 Seasons, 4 Viols - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/les-voix-humaines.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+    
+    
+    
+<!--  Check for single event listing  -->
+
+
+    <h4>
+    <!--  If statement to correct if 2 events in one day  -->
+        
+          June 27 -
+            
+            July 4, 2018
+            
+        
+    </h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Summer Tour – 4 Seasons, 4 Viols</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <p>Antonio Vivaldi’s Quattro Stagioni revisited. Original arrangements for 4 violas da gamba of Vivaldi’s 4 Seasons by Susie Napper &amp; Margaret Little, mixed in with a tasty recipe of seasonal songs.</p>
+
+<p>The Four Seasons (Le Quattro Stagioni) is Antonio Vivaldi’s (1678-1741) most popular set of concertos. What a bizarre phenomenon that these pieces are heard nowadays as elevator and supermarket Muzak, as street music on anything from accordion to Jews harp as well as annoying, “on hold” telephone entertainment!</p>
+
+<p>However the popularity of The Four Seasons is nothing new. They were amongst the Top Ten tunes during the 18th century! Spring was performed regularly from 1725 to 1790 at the Concerts Spirituels, the Parisian concert series. There are also many period arrangements of the concertos for diverse instruments from one recorder to full orchestra with choir. Stealing music was common practice in the baroque period. Like clay, it was a medium to be modelled to fit different instruments and new performance situations. Les Voix humaines has, therefore, followed a well-trodden, baroque tradition by arranging these pieces for the fun of it! And this June they bring these arrangements to Nova Scotians across the province on their 2018 summer tour!</p>
+
+<p>Each of Vivaldi’s seasons is filled with word painting: hear the birds singing, dogs barking and the hurdy-gurdy in Spring, the thunder storms and mosquitos in Summer, the drunken farmers and hunting horns in Autumn and the wind, ice and rain in Winter. Vivaldi includes short poetic descriptions of the seasons throughout the music which may be heard during this performance. Les Voix humaines will also bring other well-known jazz standards, pop tunes and traditional songs (by Henry Purcell, George Gershwin or Joseph Kosma) that are slipped into the concertos for added pleasure. Luckily we’ll never know if Vivaldi is turning in his grave!</p>
+
+<p>Les Voix humaines, a viola da gamba duo, has thrilled audiences worldwide with dashing performances of early and contemporary music for over three decades. Susie Napper and Margaret Little‘s musical complicity has been compared to the skill of two trapeze artists or the telepathic communion of a pair of jazz saxophonists!  A decade ago the duo was joined by Mélisande Corriveau and Felix Deak to form Les Voix humaines Consort of Viols to take a refreshing look at the huge repertoire for multiple viols. The consort has toured in Canada, Mexico, Europe, Scandinavia and the Baltic States and recorded Bach’s Art of Fugue, Purcell’s Fantasias, Dowland’s Lachrimae.  Now they bring Nova Scotia audiences a fresh look at Vivaldi’s Quattro Stagioni for equal viols - 4 Seasons, 4 viols: wherever in Nova Scotia is called home, let Les Voix humaines bring the Four Seasons to you!</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="https://lesvoixhumaines.org/" target="_blank">Les Voix Humaines</a>
+
+        : 
+
+        
+        Susie Napper
+        (vielle),
+
+        
+        Margaret Little,
+
+        
+        Mélisande Corriveau,
+
+        
+        Felix Deak</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. David's Presbyterian Church<br></b>Wednesday 27 June  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $$20. Purchase <a href="https://goo.gl/vwPT8v" target="_blank">online</a>
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/The+Presbyterian+Church+of+St.+David/@44.6446257,-63.5770453,17z/data=!3m1!4b1!4m5!3m4!1s0x4b5a2233742a2b91:0x3142fca511a1523c!8m2!3d44.6446257!4d-63.5748513" target="_blank">1544 Grafton Street, Halifax, B3J 2G1</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Sharon United<br></b>Thursday 28 June  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $$20. Purchase <a href="https://goo.gl/8MtX1g" target="_blank">online</a>
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Manning Chapel<br></b>Friday 29 June  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $$20. Purchase <a href="https://goo.gl/hJmh2s" target="_blank">online</a>
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/Manning+Memorial+Chapel/@45.0892923,-64.36788,17z/data=!3m1!4b1!4m5!3m4!1s0x4b5855a612ac1c65:0x81c65f44b9b2ee05!8m2!3d45.0892923!4d-64.3656913" target="_blank">45 Acadia St., Wolfville</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Cecilia's Retreat<br></b>Saturday 30 June  –  6:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+           Due to limited seating, admission is by advance reservation only. To reserve, please <a href="mailto:barbara.butler@ns.sympatico.ca">email</a> or phone 902 624 0506
+
+          
+          Admission by advance reservation, please email barbara.butler@ns.sympatico.ca
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/Cecilia's+Retreat/@44.4522791,-64.3685385,12z/data=!4m8!1m2!2m1!1scecilia's+retreat!3m4!1s0x4b575f0863975fc1:0xbe8b9ec5c2df66d0!8m2!3d44.4501714!4d-64.3453891" target="_blank">1199 Oakland Rd. RR2, Mahone Bay</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Central Chebogue United Baptist Church<br></b>Monday 2 July  –  7:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $$20. Purchase <a href="https://goo.gl/ttYdom" target="_blank">online</a>
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Evergreen Theatre<br></b>Tuesday 3 July  –  8:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $$30 (students $15). Purchase <a href="https://goo.gl/6ZRCD5" target="_blank">online</a>
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/Evergreen+Theatre/@45.0319065,-65.0740321,12z/data=!4m5!3m4!1s0x4b586e6022c93a27:0x9ccf8172709fa438!8m2!3d45.05218!4d-65.0194071" target="_blank">1941 Stronach Mountain Road, East Margaretsville</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. John's Anglican Church Lunenburg<br></b>Wednesday 4 July  – 12:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+           Admission by donation
+
+          
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/St.+John's+Anglican+Church/@44.3781537,-64.313376,17z/data=!3m1!4b1!4m5!3m4!1s0x4b575bc5faed7955:0x43479f4173fc745c!8m2!3d44.3781499!4d-64.3111872" target="_blank">64 Townsend St, Lunenburg</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

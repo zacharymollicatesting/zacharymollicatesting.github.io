@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Duo Concertante performs J.S. Bach - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/duo-concertante.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday January 18 2020, 11:00 AM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Duo Concertante performs J.S. Bach</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <p>Musique Royale invites you into the intimate setting of Cecilia’s Retreat to hear four of J.S. Bach’s Sonatas for violin and piano interpreted by the magnetic Duo Concertante. Known for the passion and brilliance of their performances, critics have praised Nancy Dahn and Timothy Steeves’ “artistry, poetry, and impeccable technique” (La Scena Musicale) and “deeply integrated performances that flow naturally as if the music were being created on the spot” (Gramophone). Their busy touring schedule across North America, Europe, and China, has led to performances at Wigmore Hall, Weill Recital Hall, Roy Thomson Hall, the National Arts Centre, and the Forbidden City Concert Hall in Beijing.  Nancy and Tim’s eleven commercial CDs include a 2011 JUNO award winner and the ECMA Classical Recording of the Year for 2017, 2018 and 2019. Fellows of the Royal Society of Canada, they are Research Professors at Memorial University and Artistic Directors of the Tuckamore Festival in St John’s, NL. Duo Concertante has performed regularly at Cecilia’s Retreat through the years and Musique Royale is delighted to welcome them back on January 18th.</p>
+
+<p><strong>Additional Biographical Information:</strong></p>
+
+<p>For over twenty years, violinist Nancy Dahn and pianist Timothy Steeves have built an international career as the acclaimed Canadian chamber ensemble Duo Concertante. Their name comes from the inscription over Beethoven’s “Kreutzer” sonata, “in stilo molto concertante,” which implies the two performers are equal, dynamic voices. This defines Duo Concertante’s unique artistic relationship and the exceptionally unified voice that has impressed audiences and critics worldwide.</p>
+
+<p>After their first concert in 1997, the Halifax Chronicle-Herald called them “two packages of musical dynamite that would credit any stage on the planet.” Since then, they have performed more than 600 performances across North America, in Europe, Central America and China. Their recitals have received numerous accolades including the following critical quotes from international press:</p>
+
+<ul>
+  <li>“Grace and fire…fury and repose…a triumphant mass of non-stop energy” – Whole Note</li>
+  <li>“Majesty, passion and excitement. Inspiring!” – Weiner Zeitung (Vienna)</li>
+  <li>“Splendid… deeply integrated performances that flow naturally as if the music were being created on the spot”  – Gramophone</li>
+  <li>“Artistry, poetry, and impeccable technique” – La Scena Musicale</li>
+</ul>
+
+<p>The Beethoven violin sonatas have always been central to the Duo’s repertoire. Their recording Beethoven: Complete Sonatas for Violin and Piano received critical praise in German, Austrian, British and Canadian media; it was featured for months on Air Canada’s entertainment system and is heard on CBC radio almost weekly. Music Toronto’s John Terauds says, “these beautiful interpretations are so good right down to the tiniest of details that they deserve to be called a reference in… contemporary performance”. Gramophone writes that Dahn and Steeves “do Atlantic Canada proud in this splendid new set” and describes their interpretation as a “miracle of… knowledge and poetry”.</p>
+
+<p>Duo Concertante have ten other acclaimed recordings on top Canadian labels ATMA, Centrediscs, and Marquis. The first three CDs on the highly respected ATMA label were À Deux, Of Heart and Homeland and Wild Honey. It Takes Two (2009) features encore pieces arranged by Canadian composer Clifford Crawley; American Record Guide described it as “spectacular.” Wild Bird (Centrediscs, 2010) comprises works written for the Duo by renowned Canadian composers Murray Schafer, Chan Ka Nin, and Kati Agócs, including Schafer’s Duo for Violin and Piano, which won a 2011 Juno Award (Classical Composition of the Year). In 2016 they released their eighth CD, a two-disc set of Bach’s sonatas for violin and keyboard, for which they received the first of three consecutive ECMA for Classical Recording of the Year, followed by Incarnation in 2018 and Perfect Light in 2019. The complete violin and piano works by Schubert will be released in 2020.</p>
+
+<p>As champions of Canadian music, Duo Concertante have advanced and expanded the repertoire of music for violin and piano. Since 1997, Canada’s leading composers have written sixty-one major new compositions for them and the Duo continues to add to this legacy of new works through unrelenting commissioning activity. They regularly include new Canadian pieces alongside standard repertoire at such prestigious venues as Wigmore Hall (London), Carnegie Hall’s Weill Recital Hall (New York City), Shanghai City Theatre (Shanghai), the Los Angeles County Museum of Art (Los Angeles), Roy Thomson Hall and the Four Seasons Performing Arts Centre (Toronto), the National Arts Centre (Ottawa), and the Forbidden City Concert Hall (Beijing), among others. Duo Concertante’s albums Wild Bird (Centredisc), Wild Honey (ATMA) and Incarnation (Marquis) are comprised entirely of premiere recordings of new Canadian music.</p>
+
+<p>In 2020, the Duo will launch “Ecology of Being,” a program of music and words inspired by climate change, climate action and mankind’s reliance on the earth not only for survival but for resilience, mental health and spirituality. With funding from the Canada Council of the Arts’ New Chapters program, new works by Melissa Hui, Ian Cusson, Bekah Simms, Dawn Avery, and Carmen Braden will reflect on the state of our world and what we may be leaving the next generation. The program, which also includes texts and poetry, will be featured at Toronto Summer Music, Ottawa International Chamber Music Festival, Stratford Summer Music, Tuckamore Festival and Musique Royale and toured throughout parts of Canada and abroad in 2020-2021.</p>
+
+<p>Duo Concertante are the artistic directors, founders, performers, and mentors of the Tuckamore Festival – an internationally acclaimed chamber musical festival held for two weeks each August. For almost 20 years, Tuckamore – a major contributor to the cultural life of Newfoundland and Labrador– has welcomed leading artists and emerging musicians worldwide to St. John’s. In addition to featuring extraordinary performances by artists such as Janina Fialkowska, Jon Kimura Parker, the Danish String Quartet, the Miro Quartet, and Louie Lortie, it also offers an inspiring and intensive educational experience for more than 20 young chamber musicians and composers. Duo Concertante also regularly perform and collaborate with other artists of international stature, at other summer music festivals throughout North America, including the Ottawa International Chamber Music Festival, Cactus Pear Music Festival, Toronto Summer Music, Festival of the Sound, Indian River Festival, Domain Forget and Music Niagara.</p>
+
+<p>Duo Concertante are deeply committed to broadening the reach of and accessibility to great chamber music and, with the Tuckamore Festival, they have been instrumental in creating numerous outreach and enrichment programs. Performances in smaller communities, school touring program, free lunchtime concerts and open rehearsals, post-concert chats, and pre-concerts talks are designed to allow audiences share, learn and experience how chamber music is inspired, composed and performed. In 2017 and 2019, a school program “What Life Throws at You” reached over 1200 students in grades 4-12 and explored the difficult lives of Schumann, Bach, Tchaikovsky, Beethoven, Glenn Gould, and Emile Benoît.  All of these extraordinary musicians faced seemingly insurmountable challenges but these perceived disadvantages actually played a critical role in their achievements and special artistry. Through their music and life stories, students examined issues of physical disability, discrimination, mental illness, sexuality and marginalization.</p>
+
+<p>Throughout their artistic endeavours and achievements, Nancy and Tim have maintained a full studio of students drawn from across North America. Their students have been accepted for graduate studies at the Juilliard School, Rice University, the New England Conservatory, the Royal Academy of Music, the Guildhall School and the Peabody Conservatory. Duo Concertante have given hundreds of master classes and workshops in Canada, the US and China.</p>
+
+<p>Duo Concertante’s artistic excellence and contributions throughout their 20-year career has been acknowledged with the receipt of Royal Society of Canada Fellowships, being named University Research Professors by Memorial University of Newfoundland and singled out by the Newfoundland and Labrador Arts Council as Artists of the Year in 2009.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="http://www.duoconcertante.com" target="_blank">Duo Concertante</a>
+
+        : 
+
+        
+        Nancy Dahn
+        (violin),
+
+        
+        Timothy Steeves
+        (piano)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Cecilia's Retreat<br></b>Saturday 18 January  – 11:00 AM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $35. 
+
+          
+          Admission by advance reservation, please email barbara.butler@ns.sympatico.ca
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/Cecilia's+Retreat/@44.4522791,-64.3685385,12z/data=!4m8!1m2!2m1!1scecilia's+retreat!3m4!1s0x4b575f0863975fc1:0xbe8b9ec5c2df66d0!8m2!3d44.4501714!4d-64.3453891" target="_blank">1199 Oakland Rd. RR2, Mahone Bay</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

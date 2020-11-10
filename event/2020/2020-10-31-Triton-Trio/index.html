@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Triton Trio - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/triton-trio.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday October 31 2020,  7:30 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Triton Trio</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <p>Musique Royale presents Triton Trio on Saturday Oct 31st at 7:30 pm, in a virtual concert from St John’s Anglican Church in Lunenburg.</p>
+
+<h3 id="programme">Programme</h3>
+
+<p>Antonio Vivaldi (1678-1741) – Concerto for Two Trumpets and Piano<br />
+Eugene Bozza (1905-1991) – Dialogues for Two Trumpets<br />
+Ann Southam (1937-2010, Canadian composer) – Glass Houses No.7 Solo Piano<br />
+John Williams (1932-) – With Malice Towards None  for Trumpet and Piano<br />
+Jean Baptiste Arban (1825-1889) – Carnival of Venice for Two Trumpets and Piano</p>
+
+<h3 id="about-the-artists">About the artists</h3>
+
+<p><strong>Curtis Dietz – trumpet</strong></p>
+
+<p>A native of Hanover, Ontario, Curtis Dietz has been a member of Symphony Nova Scotia since 1996. He is a graduate of the University of Montreal and also studied at the University of Toronto and the Banff Center for the Arts. Curtis has performed and recorded with some of Canada’s finest orchestras including the Montreal Symphony, the Canadian Opera Company and the National Arts Center Orchestra. He is a frequent collaborator with Grammy winning Composer Paul Halley and is a founding member of the Maritime Brass Quintet.  Curtis currently resides in Hacketts Cove Nova Scotia with his wife, Gina Patterson, and three musically active children Peter, Kate and Greta.</p>
+
+<p><strong>Richard Simoneau – trumpet</strong></p>
+
+<p>Richard was born in 1970 in Quebec City, and began playing trumpet at age 13 in high school. He pursued his studies at the Quebec and then Montreal Conservatories, graduating in May 1994. That summer, he auditioned with the Montreal Symphony Orchestra and won a one-year contract to play third and Assistant Principal Trumpet. The next year he played Principal Trumpet with the Hamilton Philharmonic and the National Arts Center Orchestra in Ottawa, before moving to his current position of Principal Trumpet with Symphony Nova Scotia in September 1996.</p>
+
+<p>Since moving to Halifax, Richard has been heard on many occasions as soloist with Symphony Nova Scotia. Many of those performances have been recorded and broadcasted nationally by the CBC. His other musical activities include performing brass concerts with the Maritime Brass quintet, which is a professional brass ensemble. Richard has been on faculties of such universities as Acadia University in Wolfville, Université de Moncton, and Dalhousie University in Halifax. He also acts as artist in residence at the Scotia Festival of Music held in Halifax.  When Richard is not performing on the trumpet, he enjoys spending time outdoors, mostly hiking and camping. Richard is a Yamaha Artist and performs on Yamaha trumpets.</p>
+
+<p><strong>Tara Scott – piano</strong></p>
+
+<p>Tara Scott is one of Atlantic Canada’s most renowned collaborative pianists. Her love of teaching and performing has led her to pursue staff accompanist positions at Western, Dalhousie, Acadia, and Mount Allison Universities. She has performed extensively with singers, instrumentalists and choirs across Canada. Tara is the principal Music Director and Pianist for Maritime Concert Opera, based in Lunenburg NS. With MCO, she has performed eighteen full-length operas and has conducted chamber orchestras for two productions. She co-founded, with Nina Scott-Stoddart, Halifax Summer Opera Workshop, an opera training program with fully staged productions, now in its sixteenth season. She has worked as Music Director for Eastern Front Theatre, Acadia’s Singing Theatre and has performed with Opera Nova Scotia, Opera New Brunswick and Halifax Theatre for Young People. In 2019, Tara received a Merritt Award from Theatre Nova Scotia for outstanding music direction of KAMP the musical.</p>
+
+<p>Tara maintains a busy private piano studio in Dartmouth NS and is on faculty at the Maritime Conservatory of Performing Arts. She has adjudicated extensively for music festivals throughout the Maritimes and has worked as piano examiner for Mount Allison and the Maritime Conservatory. She is also the accompanist for Dalhousie’s Collegium Cantorum, directed by Gary Ewer. Tara received a Bachelor of Music Degree in piano performance from Mount Allison University, under the tutelage of Dr Janet Hammock. She studied with Dr John Hess at Western University, receiving a Master’s degree of literature and performance in collaborative piano. Originally from Grand Bay-Westfield NB, Tara now resides in Dartmouth with her husband and three children.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        Triton Trio: 
+
+        
+        <a href="https://symphonynovascotia.ca/about/who-we-are/our-musicians/curtis-dietz/" target="_blank">Curtis Dietz</a>
+
+        
+        (trumpet),
+
+        
+        Richard Simonau
+        (trumpet),
+
+        
+        Tara Scott
+        (piano)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. John's Anglican Church, Lunenburg<br></b>Saturday 31 October  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+           
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+<a href="https://www.youtube.com/channel/UCLIxFcPgFgX88e_vWSwgo8Q" target="_blank">Watch on YouTube</a>
+
+
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

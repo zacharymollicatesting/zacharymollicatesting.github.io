@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Foxfire - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+    <img class="centered" src="/assets/events/foxfire.jpg" style="margin-bottom:3em;">
+    
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday February 1 2020,  2:00 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Foxfire</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <p><em>Foxfire is the glowing branches in the forest, a bio-luminescence so rare and magical. Fitting is the name for this eclectic trio.  Coco Harris, Mary Knickle and Miranda Lever soulfully bring you a wide range of songs, velvet rich harmonies, accompanied by a myriad of instruments.</em></p>
+
+<p>Cookie Concerts are hour long presentations incorporating music with other artistic creativity, for the whole family to enjoy! Come out the first Saturday of each month from October-June, always 2 pm at the Lunenburg School of the Arts.</p>
+
+<h3 id="about-the-artists">About the Artists</h3>
+
+<p><strong>Miranda Lever</strong></p>
+
+<p>Miranda Lever is a music teacher,  teaching grades 1 through 7 at the South Shore Waldorf School, as well as private lessons for piano, ukulele, guitar and voice at the Buchanan’s House of Music in Mahone Bay. She has taken to the stage with a number of bands encompassing a range of musical genres, finding joy in folk, musical theater, metal, jazz, rock and blues. Her solo performances weave together a mix of styles and time periods, all united by her clear vocals.</p>
+
+<p>Miranda is the networker responsible for bringing together the members of Foxfire. Upon meeting Mary Knickle in the fall of 2018 the two made a connection and realized they shared a hunger for a new musical project to sink their teeth into. Miranda’s 10 year history of friendship and co-creation with Coco Harris made her an obvious fit for a harmonious third. The three began meeting in the summer of 2019 and debuted at the Pennybrook Music Festival 6 weeks later. The three women bring a wealth of passion, experience and talent to the table, making rehearsals an easy dreamy delight.</p>
+
+<p><strong>Mary Knickle</strong></p>
+
+<p>Mary Knickle was brought up in a small fishing town on stories and songs. She studied music at Acadia University including four years of counterpoint. After graduating she studied acting, singing and dancing at the Banff School of Fine Arts and then in New York City for two years at the American Musical Dramatic Academy.  She performed in Operas, Musicals, and plays in professional venues for over 30 years. When she discovered her songwriting ability she formed her own Celtic band and played Folk Festivals and concert venues over 15 years releasing 3 albums of original music, the second recorded by CBC.  She has received honours and was a semi-finalist in two prestigious song-writing contests out of the UK. Her last album Weave received national recognition.</p>
+
+<p>Mary discovered her passion to write larger works and combined all of her theatre, music and writing skills to develop these dramatic compositions.  Hailed as a “talented composer” by Opera Canada Magazine, her opera Morgan le Fay received a rave review.  Miryam, a musical drama for voices and string quartet, uses Sephardic influences and her Seafarers’ Requiem for SATB Chorus and soloists received high acclaim and national recognition on CBC radio. She participated in the Lunenburg Academy Music Performance 10 day intensive composition academy working with Dinuk Wijeratne and Robert Aitken and presented her piece written for small ensemble and voice to a poem from Sue Goyette’s poetry collection “Ocean”. Her large choral piece on the Halifax Explosion debuted on the 100th anniversary in December 2017. Mary is currently commissioned by the Confederation Centre of the arts to write a new musical based on Wendy Lil’s play and Sheldon Currie’s novel: The Glace Bay Miners Museum.  Mary is an Associate Composer with the Canadian Music Centre.</p>
+
+<p><strong>Coco Harris</strong></p>
+
+<p>Coco Harris is a singer, stage manager, shadow puppeteer, plant-based chef, intuitive herbalist, creator and collaborator, based currently in Halifax NS. Coco is a graduate of Acadia University’s Theatre program (performance stream) in 2012. She has been part of many performance-based projects, including the White Rabbit Arts project (where she was an artist in residence in 2015, with a song, story and shadow project), the Circus of the Normal collective (which creates community-based circus and collaborative creation through play), and is the co-founder of Second Sight Collective (a theatre collective that connects through the alchemy of music, storytelling, shadowplay, puppetry, and digital/analog technologies). Her fascination with music began in her bones, growing up with a very musical maritime family who sang harmonies at the holidays, she has been singing for more than 25 years.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        Coco Harris,
+
+        
+        <a href="https://www.maryknicklemusic.com/" target="_blank">Mary Knickle</a>
+
+        
+        (vocals),
+
+        
+        Miranda Lever</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Lunenburg School of the Arts<br></b>Saturday 1 February  –  2:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $5 at the door (4 years and under free). 
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.co.uk/maps?q=lunenburg+school+of+the+arts&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiGzdPg7tTWAhWJ5SYKHbb7BTUQ_AUICigB" target="_blank">6 Prince St, Lunenburg</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

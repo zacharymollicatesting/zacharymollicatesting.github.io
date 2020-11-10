@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Argento Collective – Cookie Concert - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+    <img class="centered" src="/assets/events/argento-collective.jpg" style="margin-bottom:3em;">
+    
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday February 2 2019,  2:00 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Argento Collective – Cookie Concert</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <p>Musique Royale presents the Argento Collective at Lunenburg School of the Arts for a Cookie Concert featuring Sibylle Marquardt (flute), Paul Pulford (cello) and Jennifer King (piano). The trio brings a range of musical experience from around the world. Flutist Sibylle Marquardt has performed flute in top notch orchestras and in both contemporary and baroque chamber ensembles in her native Germany and Canada.  Cellist Paul Pulford has performed on four continents, notably as a member of the internationally acclaimed Penderecki String Quartet from 1990-2013, and Orford String Quartet from 1987-1989. The trio is tied together by energetic and insightful pianist Jennifer King and will present works including The Swan by Saint-Saens, March of the Bluebirds by Janácek and more music by Haydn, Bach, Faure, Beethoven and Handel.</p>
+
+<p><strong>Details on the Artists</strong></p>
+
+<p>A native of Germany, Sibylle Marquardt moved to Canada in 1997. An active chamber and orchestral player in Canada and Europe, she is also recognized for her teaching. Her orchestral career began at the early age of 23, when she was regularly hired as 2nd flute/ piccolo with the Radio Symphony Orchestra Munich under Sir Colin Davis, touring to Italy and Japan. She went on to join the orchestral program of the Deutsche Oper Berlin and held a solo flute/solo piccolo position at the Freiburg Philharmonic Orchestra under Sir Donald Runnicles. She was a substitute player with the Radio Symphony Orchestra Stuttgart, Deutsche Kammerphilharmonie Bremen, Gärtnerplatz Theater Munich, Bern and Biel Symphony Orchestras. She has also played with the Windsor Symphony, the Toronto Philharmonia and the Oshawa Durham Symphony amongst others, as well as in the productions of the Phantom of the Opera and the Beauty and the Beast in Toronto.</p>
+
+<p>She was a member of the ERGO Ensemble (led by composer Barbara Croall) 2000-2012, specializing in contemporary music, as well as Duo Resonance with whom she performed regularly all over Ontario. In Germany she was a founding member of Trio Resonance, which was an established ensemble at numerous high-profile concert venues and festivals throughout Germany and Switzerland. With Duo Resonance (guitarist Wilma van Berkel) she recorded the CD “From The New Village”, featuring 20th century music.</p>
+
+<p>Sibylle is a member of Trio D’Argento, an unusual chamber group with Peter Stoll, clarinet and Todd Yaniw, piano, which is performing across Canada. Trio d’Argento has been awarded multiple grants from different granting bodies and recorded the CD “Piano Centric” with members of the Canadian Brass.</p>
+
+<p>Sibylle started the Baroque flute 1994 when she was living in Switzerland, taking lessons with Oskar Peters at the Scola Cantorum Basiliensis, and later with Alison Melville in Toronto and Claire Guimond in Montréal. She is a member of the Camerata Basel and has performed with Nota Bene Baroque Players and Toronto Masque Theatre.</p>
+
+<p>Cellist Paul Pulford is a chamber musician, soloist, conductor and educator. Since his debut recital in Winnipeg in 1967 he has performed on four continents and has recorded over 30 CDs.</p>
+
+<p>For over 25 years Pulford pursued a passion for the string quartet, playing with the internationally acclaimed Penderecki String Quartet from 1990-2013, and Orford String Quartet from 1987-1989. With the Penderecki Quartet he recorded many CDs including the Bartok String Quartets; Brahms, Shostakovich and Schnittke Piano Quintets; the quartets of Penderecki and many works by Canadian composers.</p>
+
+<p>As a quartet player, Pulford has performed in many of the great venues of the world, including Concertgebauw, Amsterdam; Wigmore Hall, London; Oratorio del Gonfalone, Rome; La Caxia, Barcelona; Weill Recital Hall at Carnegie Hall, New York City; Kennedy Centre, Washington; Los Angeles County Museum of Art; Takefu Festival in Japan; Palacio de Bellas Artes, Mexico City; National Arts Centre, Glenn Gould Studio &amp; St. Lawrence Centre, Canada; to name a few.</p>
+
+<p>From 1989 to 2017 Pulford was Professor of Cello and Director of Orchestral Studies at Wilfrid Laurier University in Waterloo, where he also served for seven years as Associate Dean of Music. During his tenure at Laurier he developed a professional-level orchestral training program, and taught and mentored many cellists and orchestral musicians who are now part of the professional music world in Canada and abroad. In 1991, Pulford founded QuartetFest, a festival based at Laurier that celebrates the art of the string quartet with performances by international ensembles and mentorship of emerging string quartets from around the world. Pulford remains Professor Emeritus at Laurier.</p>
+
+<p>As a conductor, Pulford has worked with Symphony New Brunswick, Kitchener- Waterloo Symphony, Canadian Chamber Ensemble, Mississauga Symphony, Stratford Symphony Orchestra and as Resident Conductor of the NUMUS Ensemble. He has conducted many premiers of new works, including Tim Brady’s opera The Salome Dancer, and Glenn Buhr’s Red Sea (2010) and Piano Concerto (2015).</p>
+
+<p>Pulford maintains a passionate commitment to contemporary music through his involvement with Blue Rider Ensemble, which he co-founded in 1989. Based in Montreal, Blue Rider specializes in 20th and 21st century Instrumental Theatre works, having released a highly acclaimed CD recording of Schoenberg’s Pierrot Lunaire, premiered experimental works such as Peter Hatch’s Mounting Picasso, and created new works, including the large-scale multi-media work, Frankenstein’s Ghosts.</p>
+
+<p>Pulford continues to perform and record as a soloist. He has recorded the complete works for cello and fortepiano by Beethoven (IBS Label) and Brahms (Doremi Label). His most recent CD, Volume I, Suites 1, 2 and 3 for Solo Cello by J.S. Bach is available on iTunes. He is currently working on Volume II.</p>
+
+<p>Paul was an artist-in-residence at UNB Fredericton as a member of the New Brunswick String Quartet from 1984-1989. He lives in Long Reach, New Brunswick.</p>
+
+<p>Jennifer King is known as an energetic, insightful and versatile pianist. Ms. King has performed in hundreds of recitals and concerts as a collaborative pianist, and as a solo artist. She recently recorded an album of beautiful night-inspired solo piano music (O Mistress Moon), and has performed a number of Canadian premieres recently, with a passion for exploring new music.</p>
+
+<p>University, a Bachelor from Acadia University and has completed postgraduate diplomas at the University of Reading in the UK as well as the prestigious Royal Academy of Music in London, England.  Ms. King has held positions at Acadia University’s School of Music and currently teaches at the Maritime Conservatory of Performing Arts and from her home studio.</p>
+
+    <!-- Cookie Concert line -->
+    
+    
+    <p>Enjoy a freshly baked cookie and added activities that often accompany our cookie events!</p>
+    
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        Sibylle Marquardt, flute,
+
+        
+        Paul Pulford, cello,
+
+        
+        Jennifer King, piano</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Lunenburg School of the Arts<br></b>Saturday 2 February  –  2:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+          
+          <!--$5 at the door (4 years and under free)-->
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.co.uk/maps?q=lunenburg+school+of+the+arts&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiGzdPg7tTWAhWJ5SYKHbb7BTUQ_AUICigB" target="_blank">6 Prince St, Lunenburg</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

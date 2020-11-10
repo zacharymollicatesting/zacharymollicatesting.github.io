@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>From Russia With Love - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+    <img class="centered" src="/assets/events/merkelo-and-salov.jpg" style="margin-bottom:3em;">
+    
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday March 21 2020,  5:00 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>From Russia With Love</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <h3 id="due-to-new-recommendations-from-nova-scotias-public-health-authorities-regarding-covid-19-the-cecilias-retreat-event-featuring-merkelo--salov-has-been-cancelled">Due to new recommendations from Nova Scotia’s public health authorities regarding COVID-19, the Cecilia’s Retreat event featuring Merkelo &amp; Salov has been cancelled.</h3>
+
+<h3 id="about-the-artists">About the artists</h3>
+
+<p><strong>Paul Merkelo</strong></p>
+
+<p>Renowned as one of the finest trumpet players of his generation, Paul Merkelo is recognized for his “unusual lyrical gifts’’ (Gramophone) as well as his “pure technical prowess’’ (Rochester Democrat &amp; Chronicle). Principal trumpet with the Montreal Symphony Orchestra since 1995, Merkelo is regularly praised by the Montreal press as “a spectacular soloist… a most impressive master of his instrument’’ (Montreal Gazette), and a “great virtuoso” and “dazzling’’ (La Presse). He has been featured frequently with the OSM, including tours to South America and the Lincoln Center in New York, along with several world premiere works. Most recently, he has released a solo recording with Maestro Kent Nagano and the OSM entitled French Trumpet Concertos, which was a 2016 Juno Award nominee for Classical Album of the Year.</p>
+
+<p>In 1998, he made his New York debut at Lincoln Center with the New World Symphony Orchestra and Michael Tilson Thomas, performing the U.S. orchestral premiere of Carmen Fantasie by Franz Waxman. Merkelo was appointed Canadian musical ambassador to China in 1999 for the inauguration of the Montreal Park in Shanghai, and he performed as soloist with the Shanghai Broadcast Orchestra in a national telecast. He has been featured with orchestras and in recital throughout the United States, Canada, Russia, China, Australia, Japan, Portugal, Brazil, Venezuela, Peru, France and Thailand. He has worked with conductors such as Leonard Bernstein, Charles Dutoit, Lorin Maazel, Zubin Mehta, Sir Georg Solti and Valery Gergiev. Merkelo’s first solo recording, A Simple Song, was ranked #1 in Quebec’s classical
+recording chart in 2000 and in 2004, Analekta released a highly praised second CD, Baroque Transcriptions, which was nominated by the ADISQ for “Best Classical Album of the Year”.</p>
+
+<p>Previously, he was Principal Trumpet with the Rochester Philharmonic and the New Orleans Symphony Orchestra and gained early orchestral experience as an extra with the New York Philharmonic and Pittsburgh Symphony. Merkelo is a faculty member at the Music Academy of the West in Santa Barbara and at McGill University in Montreal. He is on the board of directors for the Youth Orchestra of the Americas (Canada), and is the founder of the Paul Merkelo Scholarship helping young Canadian musicians. He will be recording the Haydn, Hummel and Mozart concerti with the Oxford Philharmonic in 2018.</p>
+
+<p><strong>Serhiy Salov</strong></p>
+
+<p>Born into the exceptional pianistic tradition of the Ukraine, Serhiy Salov also draws on substantial periods of study in both composition and musicology. Indeed, it was his own arrangement for solo piano of Stravinsky’s Rite of Spring that led Gramophone to state that “Serhiy Salov makes Stravinsky’s masterpiece his own”. The magazine praised his “glittering technique, meticulous balancing of chords and precise articulation of rapid-fire figurations” as well as his “splendid ear for nuance” and the “unruffled tonal sheen” in a “remarkable tour de force”.</p>
+
+<p>It was at the age of eleven that Serhiy Salov gave his first public concert – the Grieg Piano Concerto with the Ukrainian National Orchestra – followed by his first solo recital the following year at Donetsk’s Philharmonia Hall. In 1994, aged 15, he went to Germany taking a degree at Hochschule für Musik Freiburg, where he studied with the distinguished French pianist Michel Béroff. He then completed a four-year master’s course at London’s Guildhall School of Music and Drama with Joan Havill, receiving the Concert Recital Diploma (Premier Prix). For further studies with Jean Saulnier the young Ukranian settled over to Canada in 2007, where he had already won the Montréal International Musical Competition in 2004. In addition to his Montréal triumph in 2004, his competition achievements include First Prize in the Dudley (2000) and Épinal (2004) International Piano Competitions, Second Prizes at the Gina Bachauer Competition (2010) and the Cincinnati World Piano Competition (2012) and Third Prizes at the Long-Thibaud (2001), the Hamamatsu (2003) and the Tromsö Top of the World (2009) competitions. In May 2014 Serhiy Salov won the Richard Lupien Improvisation Prize, which has been awarded for the first time by the Montreal International Musical Competition.</p>
+
+<p>With recital programmes that extend from Johann Sebastian Bach through the Classical, Romantic and early Modernist composers to György Ligeti, the pianist recently also dedicates himself to contemporary pieces. His concerto repertoire ranges from the great works of the 19th and 20th centuries to lesser-known Soviet composers. Serhiy Salov has made solo appearances in Belgium, Canada, France, Germany, Italy, Japan, the UK and Ukraine, and has played with the Berlin Symphony, the Hallé Orchestra, the Montréal Symphony Orchestra, the New Jersey Symphony Orchestra, the Orchestre National de Radio France, the Philharmonia Orchestra, the Royal Liverpool Philharmonic, the Royal Philharmonic Orchestra, the Salt Lake City Symphony and the Tokyo Symphony, with conductors including Martyn Brabbins, Lawrence Foster, Jacques Lacombe, Yannick Nézet-Séguin and Leonard Slatkin. In spring 2013 he toured South America playing Liszt’s Second Piano Concerto with the Montréal Symphony Orchestra and Kent Nagano. In 2013 he interpreted Beethoven’s Triple Concerto with Stéphane Tétreault, Maxim Vengerov and I Musici de Montréal. Serhiy Salov is also a keen chamber musician, partners include the St. Lawrence String Quartet.</p>
+
+<p>Salov’s solo Rite of Spring is just one example of his piano transcriptions of large-scale works. His other enterprises in this area include Stravinsky’s Petrushka, Fêtes from Debussy’s Nocturnes, a version for solo piano of Poulenc’s D minor concerto for two pianos and orchestra as well as scenes from the Wagner operas Walküre, Siegfried and Götterdämmerung. Furthermore, Mussorgsky’s Night on a bare mountain and Prelude to the opera Khovanshchina, as well as Tchaikovsky’s Seasons and Nutcracker have been included as transcriptions by the pianist into his repertoire.</p>
+
+<p>In the last season, Serhiy Salov has given his debuts with Krakow Philharmonic Orchestra and Michał Dworzyński, with Artur Rubinstein Philharmonic Lódz and Pawel Przytocki as well as with the Philharmonia Orchestra and Martyn Brabbins at Bedford Corn Exchange. Concerts in the season 2015/2016 will bring him to China where he will perform in different cities. Further concerts will be in various venues in Canada. Serhiy Salov is a regular guest at Bachfestival Montréal.</p>
+
+<p>The Rite of Spring was paired on CD with the world premiere recording of Hutsulian Watercolours by the Ukrainian composer Ihor Shamo (1925-1982) on Analekta in 2010, while Serhiy Salov’s previous release, Shostakovich’s Circle, showcased rarely performed piano concertos by German Galynin and Galina Ustvolskaya. Both releases received the Prix Opus for “Best Classical Recording of the Year” by Conseil Québécois de la Musique.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="http://www.paulmerkelotrumpet.com/" target="_blank">Paul Merkelo</a>
+
+        
+        (trumpet),
+
+        
+        <a href="http://www.serhiysalov.com/about/biography/" target="_blank">Serhiy Salov</a>
+
+        
+        (piano)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Cecilia's Retreat<br></b>Saturday 21 March  –  5:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $35. 
+
+          
+          Admission by advance reservation, please email barbara.butler@ns.sympatico.ca
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/Cecilia's+Retreat/@44.4522791,-64.3685385,12z/data=!4m8!1m2!2m1!1scecilia's+retreat!3m4!1s0x4b575f0863975fc1:0xbe8b9ec5c2df66d0!8m2!3d44.4501714!4d-64.3453891" target="_blank">1199 Oakland Rd. RR2, Mahone Bay</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

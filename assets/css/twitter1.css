@@ -1,0 +1,32 @@
+/* TWITTER FEED */
+.tweet-wrapper { position: relative; overflow: auto; margin-bottom: 40px; padding: 0; word-wrap: break-word; word-break: break-word; hyphens: auto; clear: none; overflow-wrap: break-word; height: 100%; }
+
+.user, .user a { color: #c6a260; }
+
+.tco-hidden { display: none; }
+
+/* NEW ABOVE TEMP */
+[data-scribe='element:avatar'] { display: none; }
+
+[data-scribe='element:name'] { display: none; }
+
+.tweet { font-size: 1em; display: inline-block; overflow: auto; padding: 0 1em 1em 0; }
+
+.tweet a { float: left; text-decoration: none; color: #000; }
+
+.tweet a:hover { text-decoration: underline; color: #000; }
+
+.user { width: 100%; clear: both; margin-top: 2em; }
+
+.media { position: absolute; z-index: 0; top: 0; left: 1em; max-width: 16em; max-height: 96%; }
+
+.media img { display: block; width: 100%; margin: 0; padding: 0; opacity: 0.2; }
+
+.tweet:hover > .media img { opacity: 1; }
+
+/* Twitter Media Queries */
+#twitterblock .span4 { position: relative; margin-bottom: 2.5em; }
+
+@media only screen and (max-width: 480px) { /* phones */ .twitterblock { display: block; float: left; width: 100%; } #twitterblock .span4 { margin-bottom: 1.5em; } #twitterblock .span4:after { display: none; } .tweet, .user { position: relative; left: 0; margin-left: 0; padding-left: 0; } .tweet { margin-bottom: 1em; } .media { display: none; } }
+
+/*# sourceMappingURL=twitter1.css.map */

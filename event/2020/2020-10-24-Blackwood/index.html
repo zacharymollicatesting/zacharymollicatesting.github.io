@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blackwood - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/blackwood-duo.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday October 24 2020,  7:30 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Blackwood</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <h3 id="programme">Programme</h3>
+
+<p>1) SILENTIO by Peter-Anthony Togni   <br />
+2) LOST AND FOUND by Jeff Reilly<br />
+3) UNCOUNTABLE by Peter-Anthony Togni<br />
+4) PASSAGES by Peter-Anthony Togni and Jeff Reilly<br />
+5) TO DREAM OF SILENCE by Jeff Reilly<br />
+6) SUDDENLY, SNOW! By Jeff Reilly<br />
+7) AVE VERUM from Responsio by Peter-Anthony Togni and Jeff Reilly<br />
+8) WELCOME  by Peter-Anthony Togni</p>
+
+<p>On Saturday October 24th at 7:30 pm, hear Blackwood Duo in a virtual concert performing original music from their new album scheduled for release this fall. Hear a collection of compositions that are inspired by subjects ranging from the power of dreams, the birth of children and grandchildren, the natural world and Irish mystical poetry.  The virtual concert from St. John’s Anglican Church in Lunenburg is released on Musique Royale YouTube and Facebook Channels.</p>
+
+<p>Blackwood draws upon the wide ranging performance experience of composer/organist/pianist Peter-Anthony Togni and bass clarinetist/composer Jeff Reilly.  Based in Halifax on Canada’s east coast, over the past two decades these musical soul searchers have toured the world with the trio Sanctuary, released concertos for bass clarinet and choir on the German label ECM, string orchestra concertos on Warner Classics and full length works for solo bass clarinet and vocal quartet on the Montreal based label ATMA Classique.</p>
+
+<h3 id="about-the-artists">About the artists</h3>
+
+<p><strong>Jeff Reilly – bass clarinet</strong></p>
+
+<p>“Reilly’s performance is gripping: his use of extended techniques add moments of sudden rawness to a beautifully full tone that masterfully conveys the image of the lone prophet Jeremiah”.  The Classical Review, UK (re: ECM release of Lamentations of Jeremiah)
+“Jeff Reilly is an undisputed master of the Bass Clarinet who has gone to the end to explore its sonic universe.”  Halifax Chronicle Herald
+“The virtuoso clarinetist Jeff Reilly extends his cadenzas across the history of sound, from monotony to modernism, in a performance that is dominant and often hypnotic”
+Norman Lebrecht</p>
+
+<p>Jeff Reilly leads a multifaceted life as a bass clarinetist, composer, conductor, a CBC radio music producer, and as a radio documentary maker. A recording artist for the prestigious German label ECM, he has performed with choirs, orchestras and chamber groups, in music festivals, cathedrals and concert halls around the world – with his trio Sanctuary he has performed in Shanghai, Paris, London, New York, St Petersburg, Moscow, Riga, Sochi, Toronto, Montreal and more.</p>
+
+<p>The pure emotional accessibility of his rich, lyrical performance and compositional style reminds us that extended techniques, avant-guard sonorities and complex forms of notation can be executed within the service of musicality and sensitivity. Receiving 4 Juno nominations, an ECMA award as well as 4 ECMA nominations, his approach to music blurs any simple distinctions between improvisation and composition, and does so with a musicality and sensitivity that reminds us that such distinctions are moot. Jeff has commissioned many large-scale works that feature bass clarinet, including Eriks Esenvalds, Christos Hatzis, David Mott, Peter-Anthony Togni, and Barry Guy. Jeff Reilly lives in Halifax with his wife and twin daughters, and is the CBC senior producer of music production for the Atlantic Region.</p>
+
+<p><strong>Peter-Anthony Togni – piano</strong></p>
+
+<p>Peter-Anthony’s music is spiritually rooted and contemplative, ranging from the ethereally quiet to the explosive outer limits of contemplation. One of Canada’s busiest contemporary composers, Juno nominated Togni has toured internationally and his music is regularly broadcast worldwide. Togni’s works have been released on XXI Records, CBC Records, Hänssler Classics, Warner Classics UK and ECM.  He is also a well-known Canadian broadcaster. Recent recordings include Lamentatio Jeremiah Prophetae, (bass clarinettist Jeff Reilly and the Elmer Iseler Singers – 2010), Spatium (Togni Trio – 2012), Piano Alone (solo piano – 2013), Estuary (Santuary Trio – 2015, ECMA nomination 2016) and Sea Dreams (Luminous Voices – 2020). Responsio (premiered 2013) won the 2014 Lieutenant Governor of Nova Scotia Masterworks Arts Award, was released on ATMA classique (2015) and was nominated for a Juno Award (2016). Warrior Songs, for percussionist Jerry Granelli and choir, premiered in Boulder Colorado (2014), with its Canadian premiere in Toronto (2015). Peter-Anthony played at the 53rd Magadino International Organ Festival (Switzerland – 2015), co-founded by his father the late Victor Togni. Isis and Osiris, Gods of Egypt, a new Canadian opera, premiered during Opera in Concert’s 2016 season. Sea Dreams, for choir and two flutes, premiered in Calgary in 2018, and Living Flame of Love premiered in Edmonton in 2019.  Originally from Pembroke, Ontario, he currently resides in Dartmouth, Nova Scotia, where he composes and teaches at Acadia University, and is organist and choirmaster at St. Benedict Parish.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="http://jeffreilly.ca/projects-2/blackwood/" target="_blank">Blackwood Duo</a>
+
+        : 
+
+        
+        <a href="http://jeffreilly.ca/" target="_blank">Jeff Reilly</a>
+
+        
+        (bass clarinet),
+
+        
+        <a href="http://www.petertogni.com/" target="_blank">Peter Togni</a>
+
+        
+        (piano/composer)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. John's Anglican Church, Lunenburg<br></b>Saturday 24 October  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+           
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+<a href="https://www.youtube.com/channel/UCLIxFcPgFgX88e_vWSwgo8Q" target="_blank">Watch on YouTube</a>
+
+
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

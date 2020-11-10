@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Summer Tour – Aureas Voces - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+    <img class="centered" src="/assets/events/aureas-voces-summer-tour.jpg" style="margin-bottom:3em;">
+    
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+    
+    
+    
+<!--  Check for single event listing  -->
+
+
+    <h4>
+    <!--  If statement to correct if 2 events in one day  -->
+        
+          August 3 -
+            
+            6, 2018
+            
+        
+    </h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Summer Tour – Aureas Voces</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <h3 id="early-music-ensemble-with-warm-sounds"><em>Early music ensemble with warm sounds.</em></h3>
+
+<p>Musique Royale invites listeners to hear a new group, Aureas Voces, Golden Voices, a professional Early Music ensemble based in Halifax, Nova Scotia. The ensemble is a collaboration between accomplished young musicians led by Nick Veltmeyer, and this concert tour will feature soprano, Janelle Lucyk.</p>
+
+<p>Nick Veltmeyer was awarded a scholarship and bursary from the Nova Scotia Talent Trust for his studies in sacred music and Classical literature at the University of King’s College. Alongside his longstanding apprenticeship with Paul Halley, Veltmeyer has studied conducting with Ivars Taurins, Jeanne Lamon, and Dinuk Wijeratne, as well as organ performance with Ton Koopman, Jacques Van Oortmerssen, James David Christie and Jean-Claude Zehnder.  This year Veltmeyer performed with Daniel Taylor and the Theatre of Early Music.</p>
+
+<p>As an educator, Veltmeyer has taught privately and founded educational music programs at St. Stephen’s (Chester) and Christ Church (Dartmouth). As a composer, Veltmeyer has written for the University of King’s College Chapel Choir and has produced multimedia collaborations with 2016 Sobey Art Award finalist William Robinson and artist Kurt Laurenz Theinert.  Nick Veltmeyer is currently the Music Director of Saint David’s and the Sub Organist at the University of King’s College in Halifax, Nova Scotia.</p>
+
+<p>Janelle Lucyk (soprano) graduated in 2014 with distinction from the Conservatoire Royal de Bruxelles in Belgium where she performed with three choirs, debuted Lux Aeterna, written for her and the Brussels Chamber Choir by Jan Moeyaert, and formed Voces Desuper, an ensemble performing regularly in the magnificent Cathédrale de Saints-Michel-et-Gudule, and especially at the Te Deum ceremony for the King and Queen of Belgium. Following, she completed her Masters in Management at Durham University in the UK and there she won the role of Susanna in Durham Opera Ensemble’s 2015 performance of Mozart’s The Marriage of Figaro for which she was awarded the Best Soloist by Music Durham, and Best Female Soloist by her peers at the DOE.</p>
+
+<p>Moving back to Canada, Janelle has been captivated by Nova Scotia’s flourishing music scene. Janelle has had the good fortune of working with Paul and Nick Halley, and the rare gem of Canadian choral excellence they have created. She featured in CPE Bach’s Magnificat and Mozart’s Laudate Pueri with Ensemble Regale and The King’s Chorus, in addition to Monteverdi’s Vespers of 1610 and Selva Morale e Spirituale with the Kings Chapel Choir. Winter 2017 brought performances of Messiah with the Newfoundland Symphony Orchestra and performing Mary in the Boar’s Head Festival.  Summer 2018 projects include Daniel Taylor’s Trinity Choir &amp; Theatre of Early Music, Peter Anthony Togni’s Responsio with the composer and Jeff Reilly, new jazz of Peter Anthony Togni with poetry of Rob Stevenson, and Nick Veltmeyer’s Aureas Voces.</p>
+
+<p>The 2018 Musique Royale tour will take the rich sounds of Aureas Voces to intimate venues in Parrsboro, Crousetown and Chester. The Ottawa House in Parrsboro was a summer home of Sir Charles Tupper who was a Premier of Nova Scotia, Father of Confederation, sixth Prime Minister of Canada and was knighted by Queen Victoria in 1879. Built circa 1770 and is believed to be the oldest building on the Parrsboro Shore and one of the oldest in the province of Nova Scotia. The space illustrates mid-eighteenth century Georgian architecture.</p>
+
+<p>The second concert will be held in St. Mary’s in Crousetown and dedicated to Robert Crouse, (1930-2011) a noted Patristic and Medieval scholar, and a teacher and priest in the Anglican Church of Canada, described as “the conscience of the Canadian Church”.  St. Mary’s also houses the oldest organ still in use in Atlantic Canada.</p>
+
+<p>The final tour venue, St Stephen’s Chester has historic associations with Captain Jonathan Prescott, a veteran of the second siege of the Fortress of Louisbourg, who was a warden at St. Stephen’s.  The church also has a unique historical association that pre-dates its construction. Tradition maintains that the small wooden cross that hangs in the church is made from a section of the keel of the “Young Teazer,” an American Privateer that was set on fire by its captain to avoid capture by the Royal Navy during the War of 1812 in Mahone Bay. Local folklore insists its phantom ship still sails and can be seen burning in the bay. In addition to this interesting artefact, the interior of St. Stephen’s Anglican Church boasts a full wrap-around balcony with ornate design.</p>
+
+<p>Whether in Parrsboro, Crousetown or sitting atop a balcony inside a sweet church in Chester, Musique Royale has a seat saved for you to sit back and let the golden sounds of Aureas Voces flood over you, for a perfect treat in August.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="https://aureasvoces.ca/leadership" target="_blank">Nick Veltmeyer</a>
+
+        
+        (artistic director/composer/tenor/piano),
+
+        
+        <a href="https://www.janellelucyk.com/" target="_blank">Janelle Lucyk</a>
+
+        
+        (soprano/violin)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Ottawa House Museum<br></b>Friday 3 August  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $20. available <a href="https://goo.gl/TvQ5WZ" target="_blank">online</a> and at the door.
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/Ottawa+House+Museum+by-The-Sea/@45.3750762,-64.3309752,17z/data=!3m1!4b1!4m5!3m4!1s0x4b58e9eafd8f3767:0x6951e6568a48d657!8m2!3d45.3750762!4d-64.3287812" target="_blank">1155 Whitehall Road, Parrsboro</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. Mary’s Church<br></b>Saturday 4 August  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $20. available <a href="https://goo.gl/f7Ya1r" target="_blank">online</a> and at the door.
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+1268 Italy Cross Road, Crousetown
+
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. Stephen's Church<br></b>Sunday 5 August  –  4:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $20. available <a href="https://goo.gl/xm2zzJ" target="_blank">online</a> and at the door.
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+Box 385, Chester, NS, B0J 1J0
+
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. David's Presbyterian Church<br></b>Monday 6 August  –  7:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $20. available <a href="https://goo.gl/PJQxuZ" target="_blank">online</a> and at the door.
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/The+Presbyterian+Church+of+St.+David/@44.6446257,-63.5770453,17z/data=!3m1!4b1!4m5!3m4!1s0x4b5a2233742a2b91:0x3142fca511a1523c!8m2!3d44.6446257!4d-63.5748513" target="_blank">1544 Grafton Street, Halifax, B3J 2G1</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

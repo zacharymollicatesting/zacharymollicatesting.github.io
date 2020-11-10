@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gloria! Vivaldi and his Angels - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/ensemble-caprice.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Wednesday March 25 2020,  7:30 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Gloria! Vivaldi and his Angels</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <h3 id="due-to-new-recommendations-from-nova-scotias-public-health-authorities-regarding-covid-19-gloria-vivaldi--his-angels-has-been-postponed-with-a-new-date-to-be-announced-soon-ticket-holders-will-be-contacted-shortly">Due to new recommendations from Nova Scotia’s public health authorities regarding COVID-19, Gloria! Vivaldi &amp; his angels has been postponed with a new date to be announced soon. Ticket holders will be contacted shortly.</h3>
+
+<p>Hear sacred music and concerti by the Red Priest performed by Ensemble Caprice.  Known in his native Venice as the “red priest”, from the inherited colour of his hair, Antonio Vivaldi (1678-1741) won a reputation for himself as a violinist of phenomenal ability. During almost forty years he served at the orphanage Ospedale della Pietà, to which boys were not admitted, teaching numerous young female students both as a violin and a vocal teacher. Ensemble Caprice will perform two of Vivaldi’s most famous works, the Magnificat and Gloria, which were composed for these young girls who could “sing like angels”, along with more sacred music and concerti. These exceptionally talented young women became a sensation in Italy.</p>
+
+<p>It seemed almost inconceivable that such young girls could master the excessively difficult concertos that their teacher Vivaldi had composed for them. The effect was intensified because the young women were hidden behind a barrier so that no one could see them. The most famous musicians of the orphanage were completely anonymous! Also, not difficult to appreciate the highly instrumental quality of his vocal music. Arias like Laudamus te (Gloria RV 589) and Esurientes (Magnificat RV 610) have vocal lines that reflect his virtuosic violin abilities. Vivaldi’s scores are a reflection of their amazing playing and singing, which inspired his numerous musical flights of fancy. Ensemble Caprice is touring this program with soloists, choir and orchestra across Eastern Canada, and one of the featured soloists is up-and-coming Nova Scotian tenor, Nick Veltmeyer.</p>
+
+<p><strong>About Ensemble Caprice</strong><br />
+In its 30 years of existence, Ensemble Caprice has gained international acclaim as an ensemble whose mission is to inject new life into baroque music. Besides its Montreal concert series, the orchestra tours extensively, and has gained wide recognition throughout Quebec, as well as in the rest of Canada, the USA, Central and South America, Europe and Asia.</p>
+
+<p>The musicians of Ensemble Caprice have travelled to the four corners of the globe, giving performances in dozens of countries on four continents. The Ensemble’s tours have taken its members to Asia, China, Taiwan, Africa, Morocco, Tunisia and South Africa as well as several European Countries and the Americas. It has been the featured guest ensemble in many prestigious festivals, including the Lufthansa Festival of Baroque Music in London, festivals in Bruges (Belgium) and Utrecht (the Netherlands), the Felicia Blumental International Music Festival in Tel Aviv, and, in Germany, the Musikfestspiele Potsdam Sanssouci, the Early Music Days in Regensburg, the Händel-Festspiele in Halle, and the Stockstadt Festival. In the USA, the group has performed at New York City’s Miller Theater and Frick Collection, the Boston Early Music Festival, and the Library of Congress in Washington D.C. In Canada, the Ensemble has been heard in Ottawa at the Music and Beyond Festival and the Ottawa Chamber Music Festival; it has performed at Early Music Vancouver, Early Music Voices in Calgary, the Edmonton Chamber Music Society, the Elora Festival and the International Festival Domaine Forget. This impressive roadmap bears witness to the fact that Caprice is recognised as being one of today’s leading baroque ensembles. In 2009, the New York Times devoted a full article to the Ensemble, praising it as a progressive force on the contemporary musical scene.</p>
+
+<p>Besides its international tours, the group performs a regular Montreal concert series in the Montreal Museum of Fine Arts Bourgie Hall.</p>
+
+<p>Ensemble Caprice also has a flourishing recording career, with some twenty recordings on the Analecta, ATMA Classique and Antes labels, sold in nearly 50 countries. These recordings have received numerous critical distinctions, including the Canadian Recording Industry’s Prix Juno for Gloria! Vivaldi and his Angels, and four Prix Opus awards from the Music Council of Quebec including a ‘Performer of the Year’ award and a ‘Concert of the Year’ award for the Ensemble’s performances of Antonio Vivaldi’s Juditha Triumphans, Bach’s B Minor Mass (performed as part of the Montreal Bach Festival), and Le Faste de la France, given in collaboration with the Studio de Musique ancienne de Montreal. Caprice’s unique artistic approach has also been recognised by the Montreal Arts Council, which honoured it with the ‘Public’s Choice’ award, and it was among the music finalists for the Grand Prix de Montreal. The ensemble has also received other important nominations from Germany’s Prix Echo Klassik, the Prix Opus committee, and the Association québécoise de l’Industrie du Disque. The prestigious magazine Gramophone included the Ensemble’s recording Telemann and the Baroque Gypsies on its list of recommended CDs.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        <a href="http://ensemblecaprice.com/" target="_blank">Ensemble Caprice</a>
+
+        : 
+
+        
+        <a href="https://www.matthiasmaute.com/" target="_blank">Matthias Maute</a>
+
+        
+        (director)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. John's Anglican Church Lunenburg<br></b>Wednesday 25 March  –  7:30 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $35 ($30 advance). Students $10 at the door.. Available at Lunenburg’s Shop on the Corner, <a href="https://www.canadahelps.org/en/charities/musique-royale-a-treasury-of-music-from-our-historic-past/events/gloria-vivaldi-and-his-angels/" target="_blank">online</a> and at the door.
+
+          
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.ca/maps/place/St.+John's+Anglican+Church/@44.3781537,-64.313376,17z/data=!3m1!4b1!4m5!3m4!1s0x4b575bc5faed7955:0x43479f4173fc745c!8m2!3d44.3781499!4d-64.3111872" target="_blank">64 Townsend St, Lunenburg</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

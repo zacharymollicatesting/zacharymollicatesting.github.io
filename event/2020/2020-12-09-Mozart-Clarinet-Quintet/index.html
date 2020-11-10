@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mozart Clarinet Quintet - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/eileen-walsh.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Wednesday December 9 2020, 12:00 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Mozart Clarinet Quintet</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <p>Musique Royale and the Wednesday’s at Noon series partner to feature musicians from Symphony Nova Scotia performing Mozart’s Clarinet Quintet in a virtual concert from St John’s Anglican Church. The concert is released on Wednesday December 9th at 12:00 pm via Musique Royale Facebook and YouTube channels.</p>
+
+<h3 id="about-the-artists">About the artists</h3>
+
+<p><strong>Eileen Walsh, clarinet</strong></p>
+
+<p>Clarinetist Eileen Walsh has held the position of Second Clarinet and Bass Clarinet with Symphony Nova Scotia since October 2007. Formerly the Associate Principal and E-flat Clarinet with the South Bend Symphony, Eileen earned her Master of Music degree and Performer Diploma from Indiana University in the studio of Eli Eban, and her Bachelor’s degree at the University of British Columbia in the studio of Wesley Foster.</p>
+
+<p>Eileen’s love of chamber music has led to the co-founding of the Fifth Wind Woodwind quintet and the Jollimore Trio, and most recently to her joining Rhapsody Quintet. Eileen is currently on faculty at Dalhousie and Acadia Universities, and she lives in Halifax with her husband, flutist Jack Chen, and their two young boys. Other pursuits include performing on period instruments, and a two-year term as Associate Instructor of Music Theory at the Indiana University Jacobs School of Music.</p>
+
+<p><strong>Mark Lee, violin</strong></p>
+
+<p>Halifax-born violinist Mark Lee studied at Dalhousie University with Philippe Djokic. Following his graduation in 2010, he pursued his postgraduate studies at the Royal Academy of Music with Lydia Mordkovitch and Maureen Smith as a Leverhulme Scholar. In addition to his teachers at the Royal Academy, he has also received private studies with Maxim Vengerov. Mr. Lee is the recipient of numerous awards and scholarships that include the first Georg Tintner Scholarship Award, a solo debut with Symphony Nova Scotia in February 2010, the London Symphony Orchestra String Experience Scheme, Wolfe Wolfinsohn String Quartet Prize (both in 2011 and 2014), Max Pirani Piano Trio Prize, and the Regency Award recommended by RAM for notable achievement.</p>
+
+<p>After receiving his Masters degree at the Royal Academy of Music with the highest distinction, Mr. Lee worked closely with the London Symphony Orchestra, and with the Royal Philharmonic Orchestra as acting Principal Violinist. He has made recordings with the Royal Philharmonic Orchestra, and has toured extensively throughout Europe, Russia, and Asia. He has also performed for members of the British Royal Family in the House of Lords Parliament.</p>
+
+<p>Mr. Lee is a member of the Verbier Music Festival Orchestra serving as concertmaster under many renowned conductors including Charles Dutoit, Yuri Temirkanov, Daniel Harding, Jaap van Zweden, Ivan Fischer, Esa-Pekka Salonen, Gianandrea Noseda, Valery Gergiev, Manfred Honeck, and Zubin Mehta.</p>
+
+<p>As a chamber musician, Mr. Lee has performed extensively across Europe. His performances have been radio broadcasted live across the UK and Scandinavia. He has worked with several established chamber ensembles such as the BBC Scottish Ensemble, the RTÉ Vanbrugh Quartet, the Maggini Quartet, the Endellion Quartet, the Ying Quartet, and the Escher Quartet.</p>
+
+<p><strong>Isabelle Fournier, violin</strong></p>
+
+<p>Isabelle is absolutely thrilled to be a member of Symphony Nova Scotia. Having grown up in Moncton, New Brunswick, she also has many close ties to Nova Scotia. Isabelle has performed extensively throughout Canada, the U.S., the U.K., Europe, Japan, and Taiwan. She is the recipient of two prestigious Awards by “The Countess of Munster Musical Trust” (U.K.), and she was also awarded “The Leverhulme Trust Award for Excellence in Chamber Music” (U.K.).</p>
+
+<p>Isabelle studied at the Royal College of Music (U.K.), and The Juilliard School. Her principal violin teachers have been: Paul Campbell, Rodney Friend, Dorothy DeLay, and Lydia Mordkovotch.</p>
+
+<p>Whilst living in England, Isabelle worked with many great British Chamber Orchestras. From 1998-2002, she worked principally with the English Chamber Orchestra and The Academy of St. Martin in the Fields. She also worked regularly with the Britten Sinfonia, the Northern Sinfonia, The City of London Sinfonia, and the Bournemouth Sinfonietta.</p>
+
+<p>Since her return to Canada in the Fall of 2002, Isabelle has been keeping very busy as a chamber musician, orchestral musician, soloist, teacher, adjudicator, and more recently, as music director. She has worked regularly with Symphony Nova Scotia these last ten seasons, and from 2009-2012 she was also concertmaster of the McGill Chamber Orchestra in Montreal.</p>
+
+<p><strong>Susan Sayle, viola</strong></p>
+
+<p>A violist in Symphony Nova Scotia since 1986, Susan Sayle was appointed Principal Viola in 1994. In demand as a chamber musician, she has performed with the Dalhousie Chamber Players, the St. Cecilia Concert Series, the Indian River Festival, at Concerts aux Isle du Bic, OK Quoi?, Shattering the Silence, the New Brunswick Summer Music Festival, and many times as soloist with Symphony Nova Scotia. She has also adjudicated at music festivals in Quebec, Nova Scotia, and PEI. Frequently heard on CBC Radio, Susan can also be heard on many recordings and film scores. She spends her summers in Charlottetown, PEI playing with the Charlottetown Festival Orchestra.</p>
+
+<p><strong>Rachel Desoer, cello</strong></p>
+
+<p>Rachel Desoer is a cellist from Hamilton, Ontario. She studied at the Juilliard School, Oberlin College and Conservatory, McGill University, and the Banff Centre. She graduated from Oberlin in 2008 with a Bachelor of Music degree. Rachel was the cellist of the Cecilia String Quartet from 2010 to 2018. In this ensemble, Rachel toured extensively around the world, recorded four albums on the Analekta label, and taught chamber music at the University of Toronto.</p>
+
+<p>Touring has brought Rachel to inspiring venues such as Wigmore Hall, the Concertgebouw in Amsterdam, Konzerthaus Berlin, and many more. The Cecilia Quartet also made educational programming a priority, and performed hundreds of presentations for schools. In 2014, the quartet created a concert series called Xenia, concerts specifically designed for children on the autism spectrum and their families. Exemplifying their commitment to the equal representation of women in music, Rachel spearheaded the commissioning of four string quartets by Canadian women composers in 2016.</p>
+
+<p>Throughout her schooling and career, Rachel has also played recitals and concertos with orchestra. She has also worked in other orchestras – most notably, the National Arts Centre Orchestra and the Canadian Opera Company.  Rachel plays the 1929 Carlo Giuseppe Oddone cello generously on loan to her from an anonymous donor.</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+    <p>For more please visit:
+      
+      <a href="https://symphonynovascotia.ca/" target="_blank">https://symphonynovascotia.ca/</a>
+      
+    </p>
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        Eileen Walsh
+        (clarinet),
+
+        
+        Mark Lee
+        (violin),
+
+        
+        Isabelle Fournier
+        (violin),
+
+        
+        Susan Sayle
+        (viola),
+
+        
+        Rachel Desoer
+        (cello)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">St. John's Anglican Church, Lunenburg<br></b>Wednesday 9 December  – 12:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+           
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+<a href="https://www.youtube.com/channel/UCLIxFcPgFgX88e_vWSwgo8Q" target="_blank">Watch on YouTube</a>
+
+
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

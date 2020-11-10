@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Azuline Duo - Musique Royale</title>
+
+		<link href="/assets/css/sheet-2.css" rel="stylesheet" type="text/css">
+		<meta name="keywords" content="Musique Royale, music, Nova Scotia, Lunenburg, Concert, historic, venue, community">
+
+		
+			<meta name="description" content="Musique Royale is an organization based in Lunenburg, Nova Scotia, dedicated to promoting traditional and early music in historic venues throughout the province. Since its founding in 1985, Musique Royale has continued to celebrate venues of architectural and historic significance, and bring world-class music to communities across the province." />
+		
+
+		<!-- Async fonts -->
+	  <script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+/* exported loadCSS */
+function loadCSS( href, before, media, callback ){
+	"use strict";
+	// Arguments explained:
+	// `href` is the URL for your CSS file.
+	// `before` optionally defines the element we'll use as a reference for injecting our <link>
+	// By default, `before` uses the first <script> element in the page.
+	// However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+	// If so, pass a different reference element to the `before` argument and it'll insert before that instead
+	// note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+	var ss = window.document.createElement( "link" );
+	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+	var sheets = window.document.styleSheets;
+	ss.rel = "stylesheet";
+	ss.href = href;
+	// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+	ss.media = "only x";
+	// DEPRECATED
+	if( callback ) {
+		ss.onload = callback;
+	}
+	// inject link
+	ref.parentNode.insertBefore( ss, ref );
+	// This function sets the link's media back to `all` so that the stylesheet applies once it loads
+	// It is designed to poll until document.styleSheets includes the new sheet.
+	ss.onloadcssdefined = function( cb ){
+		var defined;
+		for( var i = 0; i < sheets.length; i++ ){
+			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+				defined = true;
+			}
+		}
+		if( defined ){
+			cb();
+		} else {
+			setTimeout(function() {
+				ss.onloadcssdefined( cb );
+			});
+		}
+	};
+	ss.onloadcssdefined(function() {
+		ss.media = media || "all";
+	});
+	return ss;
+}
+// use loadCSS to load fonts.css
+loadCSS('//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+loadCSS('//fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+loadCSS('//fonts.googleapis.com/css?family=Vidaloka');
+loadCSS('//fonts.googleapis.com/icon?family=Material+Icons');
+</script>
+
+<!-- Provide a fallback in case JavaScript is broken -->
+<noscript>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</noscript>
+
+		
+
+	</head>
+<body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<header>
+  <div class="title-small">
+    <a href="/">MUSIQUE ROYALE </a>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-full">
+      <ul class="">
+        
+        <li >
+          <a href="/events/">Events</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/about/">About<i class="material-icons">
+              keyboard_arrow_down
+            </i></a>
+
+          
+          <div style="clear:both;"></div>
+
+          <ul class="dropdown">
+            
+            <a href="/team/"><li>Team</li></a>
+            
+            <a href="/history/"><li>History</li></a>
+            
+            <a href="/board/"><li>Board</li></a>
+            
+            <a href="/venue-chairs/"><li>Venue Chairs</li></a>
+            
+          </ul>
+          
+
+        </li>
+        
+        <li >
+          <a href="/artists/">Artists</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/venues/">Venues</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/social/">Social</a>
+
+          
+
+        </li>
+        
+        <li >
+          <a href="/contact/">Contact</a>
+
+          
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+
+
+    <div class="toggle-icon">
+      <div id="nav-container">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+
+
+    <div id="navigation">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <ul class="nav-expanded">
+              
+
+              <div class="span12">
+                <!---->
+                <h1><a href="/events/">Events</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/about/">About</a></h1>
+                
+                <div class="submenu">
+                  <ul>
+                    
+                    <li><a href="/team/">Team</a></li>
+
+                    
+                    <li><a href="/history/">History</a></li>
+
+                    
+                    <li><a href="/board/">Board</a></li>
+
+                    
+                    <li><a href="/venue-chairs/">Venue Chairs</a></li>
+
+                    
+
+                  </ul>
+                </div>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/artists/">Artists</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/venues/">Venues</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/social/">Social</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+              <div class="span12">
+                <!--<hr>-->
+                <h1><a href="/contact/">Contact</a></h1>
+                
+              </div>
+
+
+
+              <li >
+                <a href=""></a>
+              </li>
+
+
+
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<div style="clear:both;"></div>
+
+
+
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+<div class="container">
+
+  
+    
+  
+
+
+
+
+  <!-- PAGE MENU is populated here -->
+  
+
+
+
+
+
+
+
+
+  <div class="content" style="padding-top:2em;min-height:50em;">
+  <div class="row" style="max-width: 700px;">
+
+  <div class="span12">
+
+    
+
+    
+<!-- If there is no image this will error but ok for now -->
+<img class="centered" src="/assets/artists/azuline-duo.jpg">
+
+
+
+
+    <!-- ADD STYLE FOR EMBED VIDEO -->
+    
+
+
+
+  </div>
+
+  <div class="span12">
+
+    <!-- Automated date/date range generation -->
+    <!-- Include to generate either single date or range if applicable -->
+
+<!-- Address page layout differences -->
+
+
+<!-- Check manual range from old events -->
+
+  
+    
+    
+
+
+    <h4>Saturday April 4 2020,  2:00 PM</h4>
+    <!-- End Automated date/date range generation -->
+
+    <!-- Event Title -->
+    <h2>Azuline Duo</h2>
+    <!-- End -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  <div class="span12 eventbody">
+    <!-- Event Content -->
+    <h3 id="due-to-new-recommendations-from-nova-scotias-public-health-authorities-regarding-covid-19-the-april-cookie-concert-featuring-azuline-duo-has-been-cancelled">Due to new recommendations from Nova Scotia’s public health authorities regarding COVID-19, the April Cookie Concert featuring Azuline Duo has been cancelled.</h3>
+
+<p>Musique Royale presents the Azuline Duo, comprised of award-winning musicians Sara Traficante (flute) and Emma Rush (guitar).  With a dynamic onstage presence that engages the audience from the first note, their newest program showcases the rich history of the guitar and the brilliant voice of the flute in an exciting chamber music setting.</p>
+
+<p>Hear the traditional sounds of Spain feature in a new arrangement of Santiago de Murcia’s triumphant baroque Fandango, and virtuosic transcriptions of the gypsy-flamenco music of Manuel de Falla.  As the music of Spain travelled to South America one encounters a different scene: the haunting rainforest soundscapes of Villa Lobos, punchy Afro-latin rhythms of Pujol, the sultry sounds of Buenos Aires in the tango music of Piazolla, and the sparkling works of Chiquinha Gonzaga, Brazil’s groundbreaking first female professional musician.  Plaintive melodies and frenetic rhythm define Tadic’s Macedonian Dances, featuring the deep resonance of the alto flute.  The wooden Celtic flute makes an appearance in five stunning arrangements of Irish and Scottish melodies.  Enjoy lyrical sensitivity and show stopping technique with Duo Azuline at Cecilia’s Retreat in early April.</p>
+
+<p><strong>About the artists</strong></p>
+
+<p>Azuline Duo features award-winning young musicians Sara Traficante (flute) and Emma Rush (guitar). This ensemble pushes the boundaries of their instruments and conventional programming with unusual and rarely heard pieces both historical and contemporary, and a dynamic onstage presence that engages the audience from the first note.</p>
+
+<p>Recent performance highlights include a sold-out 2015 JUNOfest classical showcase concert and a guest appearance on the Guitar Hamilton concert series, as well as numerous performances throughout Southern Ontario. Local appearances have included Hamilton, Toronto, Cambridge, Caledon, and Ottawa and bookings with international music events including the Sauble Beach Guitar Festival (ON), Buffalo Women of the Guitar Festival (NY) and the Lonestar Guitar Festival (Weatherford, TX). They performed as guests with Sinfonia Ancaster in May, 2017. Azuline Duo has toured Nova Scotia and New Brunswick with stops in Dartmouth, Musquodoboit Harbour, Wolfville, New Minas, Avanport, and Moncton. Their Western stops have included Edmonton, Calgary, and Lethbridge, in Alberta and Whitehorse in the Yukon. They undertook a 5-city tour in Mexico in 2019.</p>
+
+<p>Azuline Duo’s debut recording “Romanza: Music of Spain and South America” was released in September, 2016 and showcases the rich history of the guitar and the brilliant voice of the flute in an exciting chamber music setting. The program combines transcriptions of Spanish favourites and new music for flute and guitar. It also features three new arrangements by Azuline Duo that re-imagine traditional repertoire in compelling and unusual presentations. “Fantastic performances, great repertoire, and sound quality to match, this album is sure to be popular with general listeners and guitarists alike.” (thisisclassicalguitar.com)</p>
+
+<p>Azuline Duo’s interest in expanding the repertoire for flute and guitar goes beyond their own arrangements. They have commissioned a new work from Canadian composer Timothy Phelan. The piece will be a fantasia based on old Spanish melodies for string and wind instruments. Nova Scotia composer Amy Brandon is currently writing a piece for Azuline Duo which will include a dance component in live presentations.</p>
+
+<p>Emma Rush has established herself as one of Canada’s top classical guitarists, in demand as both a soloist and chamber musician. Her playing has commanded worldwide recognition and she performs regularly throughout North and South America, Europe and Asia, and is a frequent guest at international guitar festivals. Performance highlights include the Shanghai International Guitar Festival (China), Nyköping Gitaarseminarium (Sweden), Internacional Festival de Gitarras Lagos de Moreno (Mexico), and a concert at the prestigious Internationales Gitarren Symposion Iserlohn (Germany). In 2016-17 she was a Debut Atlantic touring artist and an artist in residence at Dalhousie University in Halifax, NS. In 2018 she completed residencies at the Sointula Art Shed in BC, and with GEDOK in Lübeck Germany. She was featured in the documentary film The Group of Seven Guitar Project, commissioned by the McMichael Gallery, alongside Canada’s best guitarists including Bruce Cockburn, Jesse Cook, and Don Ross. Canadiana, Rush’s recent cd release, interprets classic Canadian songs with the voice of the classical guitar. Rush is known for her innovative programming and powerful stage presence. “She enchanted the audience with her charm, wit, and technical prowess” Frankenpost, Hof</p>
+
+<p>Sara Traficante is a versatile flutist who is in demand as a performer and recording artist for her expressive musicality, technical mastery, and creative approach across musical genres.She is a founding member of genre-bending trio Vox Metropolis and has a passion for presenting unique concert experiences. She is in demand as a clinician and collaborator on projects from traditional classical to film scores and indie rock and plays all flutes and whistles on the soundtrack to the new Netflix/CBC production, Anne. “Flutist Sara Traficante’s controlled vibrato and evocative changes of tone colour and sound are just right.” (Whole Note) Between them, Rush and Traficante have been recognized by the Ontario Arts Council, Heritage Canada, the Ottawa Community Foundation, the Banff Centre for Performing Arts, the Hamilton Arts Awards, and the City of Hamilton Cultural Enrichment Fund, and FACTOR. Rush is on faculty with Mohawk College (Hamilton), Redeemer University College (Ancaster) and the Hamilton Conservatory for the Arts. Traficante is on faculty at McMaster University (Hamilton) and Redeemer University College, (Ancaster) and the Centre for String Playing (Hamilton).</p>
+
+    <!-- Cookie Concert line -->
+    
+    <!-- Check for artist Bio -->
+    
+
+  </div>
+
+
+
+  <!-- Auto extract Artists -->
+
+  
+  <div class="span12">
+    <h2 class="">Featuring</h2>
+    <div class="">
+      <p>
+
+        
+        Azuline Duo: 
+
+        
+        <a href="http://saratraficante.ca/" target="_blank">Sara Traficante</a>
+
+        
+        (flute),
+
+        
+        <a href="http://emma-rush.com/" target="_blank">Emma Rush</a>
+
+        
+        (guitar)</p>
+    </div>
+
+  </div>
+
+  
+  <!-- END auto extract Artists -->
+</div>
+
+
+
+
+<div class="row" style="max-width:1200px;">
+  <div class="span12" id="performances" style="">
+    <h2 class="">Performances</h2>
+  </div>
+</div>
+
+<div class="row" style="max-width:1200px;">
+
+  
+  <div class="span6">
+    <!-- Performance block header -->
+    <div class="" style="background:#222; color:white; padding:.75em 1.5em;">
+      <b style="text-transform:none;">Lunenburg School of the Arts<br></b>Saturday 4 April  –  2:00 PM<br>
+    </div>
+    <!-- Performance block main content -->
+
+    <div class="small" style="background:#f1f1f1; padding:1.5em;">
+      
+      
+
+      <div class="">
+<p>
+
+          
+
+          $5 at the door (4 years and under free). 
+
+          
+
+          
+
+</p>
+      </div>
+
+      <div class="">
+
+        <p>
+
+
+<!-- -->
+
+
+
+
+
+  <a href="https://www.google.co.uk/maps?q=lunenburg+school+of+the+arts&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiGzdPg7tTWAhWJ5SYKHbb7BTUQ_AUICigB" target="_blank">6 Prince St, Lunenburg</a>
+
+
+
+
+<!-- -->
+
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+<div style="clear:both;margin-bottom:3em;"></div>
+
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+<a href="/events/">
+  <div class="banner">
+    <h5 class="tc">
+      Return to Upcoming Events List
+    </h5>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="row">
+      <div class="span6 right">
+        <ul>
+          <li><a href="/sponsors/">Sponsors</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/musique.royale">Facebook</a></li>
+          <li><a target="_blank" href="https://twitter.com/MusiqueRoyale">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="span6 left">
+        <span>© Musique Royale 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>
