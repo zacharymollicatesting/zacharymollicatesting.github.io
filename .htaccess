@@ -1,100 +1,23 @@
+
 # BEGIN EXPIRES
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 10 days"
-    ExpiresByType text/css "access plus 1 day"
+    ExpiresByType text/css "access plus 1 week"
     ExpiresByType text/html "access plus 1 day"
     ExpiresByType text/plain "access plus 1 month"
-    ExpiresByType image/gif "access plus 1 day"
-    ExpiresByType image/png "access plus 1 week"
-    ExpiresByType image/jpeg "access plus 1 week"
-    ExpiresByType image/jpg "access plus 1 week"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
     ExpiresByType application/x-javascript "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 day"
+    ExpiresByType application/javascript "access plus 1 week"
     ExpiresByType application/x-icon "access plus 1 year"
 </IfModule>
 # END EXPIRES
 
-# Serve GZip files
-AddEncoding gzip .gz
-RewriteCond %{HTTP:Accept-encoding} gzip
-RewriteCond %{REQUEST_FILENAME}.gz -f
-RewriteRule ^(.*)$ $1.gz [QSA,L]
 
-
+Redirect 301 /index.html /events/
 
 ErrorDocument 404 /404/
 ErrorDocument 500 /500/
-
-
-Redirect 301 /aa-summer-pavilions/ http://designandmake.aaschool.ac.uk/project/aa-summer-pavilions/
-Redirect 301 /biomass-boiler-house/ http://designandmake.aaschool.ac.uk/project/boiler-house/
-Redirect 301 http://designandmake.aaschool.ac.uk/project/biomass-boiler-house/ http://designandmake.aaschool.ac.uk/project/boiler-house/
-Redirect 301 /woodchip-barn/ http://designandmake.aaschool.ac.uk/project/wood-chip-barn/
-Redirect 301 /timber-seasoning-shelter/ http://designandmake.aaschool.ac.uk/project/timber-seasoning-shelter/
-Redirect 301 /facilities/ http://designandmake.aaschool.ac.uk/about/
-Redirect 301 /student-lodge-3/ http://designandmake.aaschool.ac.uk/project/south-lodge/
-Redirect 301 /project-student-lodge-3/ http://designandmake.aaschool.ac.uk/project/south-lodge/
-Redirect 301 /inhabitable-tetrahedron/ http://designandmake.aaschool.ac.uk/project/tetrahedron/
-Redirect 301 /new-msc-design-make/ http://designandmake.aaschool.ac.uk/about/
-Redirect 301 /hooke-park-big-shed/ http://designandmake.aaschool.ac.uk/project/big-shed/
-Redirect 301 /prpject-big-shed-2010-12/ http://designandmake.aaschool.ac.uk/project/big-shed/
-Redirect 301 /hooke-park-student-lodge-12/ http://designandmake.aaschool.ac.uk/projects/
-Redirect 301 /staff/ http://designandmake.aaschool.ac.uk/team/
-Redirect 301 /hooke-park-caretakers-house/ http://designandmake.aaschool.ac.uk/project/caretakers-house/
-Redirect 302 /thesis/ http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /programme-overview/ http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /programme-structure/ http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 302 /studios/ http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /seminar-courses/ http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /video-design-make-headquarters-hooke-park/ https://vimeo.com/166272836
-Redirect 301 /live-project-timber-seasoning-shelter/ http://designandmake.aaschool.ac.uk/project/timber-seasoning-shelter/
-Redirect 301 /projects-buildings/ http://designandmake.aaschool.ac.uk/projects/
-Redirect 301 /apply-now/ http://designandmake.aaschool.ac.uk/apply/
-Redirect 301 /programme/ http://designandmake.aaschool.ac.uk/about/
-Redirect 301 /faqs/ http://designandmake.aaschool.ac.uk/faq/
-Redirect 301 /2014-core-studio-projects/ http://designandmake.aaschool.ac.uk/project/tetrahedron/
-Redirect 301 /september-8-2013-tss-resuming-production/ http://designandmake.aaschool.ac.uk/project/timber-seasoning-shelter/
-Redirect 301 /facilities/workshop1/ http://designandmake.aaschool.ac.uk/project/workshop/
-Redirect 301 /tss-film-safwat-williams/ https://vimeo.com/218598060
-Redirect 301 /video-above-hooke-park/ https://vimeo.com/157019485
-
-
-Redirect 301 /summerbuild http://designandmake.aaschool.ac.uk/hooke-park-build/
-Redirect 301 /summerbuild/ http://designandmake.aaschool.ac.uk/hooke-park-build/
-
-
-
-
-
-
-Redirect 301 /aa-summer-pavilions http://designandmake.aaschool.ac.uk/project/aa-summer-pavilions/
-Redirect 301 /biomass-boiler-house http://designandmake.aaschool.ac.uk/project/biomass-boiler-house/
-Redirect 301 /woodchip-barn http://designandmake.aaschool.ac.uk/project/wood-chip-barn/
-Redirect 301 /timber-seasoning-shelter http://designandmake.aaschool.ac.uk/project/timber-seasoning-shelter/
-Redirect 302 /facilities http://designandmake.aaschool.ac.uk/about/
-Redirect 301 /student-lodge-3 http://designandmake.aaschool.ac.uk/project/south-lodge/
-Redirect 301 /project-student-lodge-3 http://designandmake.aaschool.ac.uk/project/south-lodge/
-Redirect 301 /inhabitable-tetrahedron http://designandmake.aaschool.ac.uk/project/tetrahedron/
-Redirect 301 /new-msc-design-make http://designandmake.aaschool.ac.uk/about/
-Redirect 301 /hooke-park-big-shed http://designandmake.aaschool.ac.uk/project/big-shed/
-Redirect 301 /prpject-big-shed-2010-12 http://designandmake.aaschool.ac.uk/project/big-shed/
-Redirect 301 /hooke-park-student-lodge-12 http://designandmake.aaschool.ac.uk/projects/
-Redirect 301 /staff/ http://designandmake.aaschool.ac.uk/team/
-Redirect 301 /hooke-park-caretakers-house http://designandmake.aaschool.ac.uk/project/caretakers-house/
-Redirect 301 /thesis http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /programme-overview http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /programme-structure http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /studios http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /seminar-courses http://designandmake.aaschool.ac.uk/course-structure/
-Redirect 301 /video-design-make-headquarters-hooke-park https://vimeo.com/166272836
-Redirect 301 /live-project-timber-seasoning-shelter http://designandmake.aaschool.ac.uk/project/timber-seasoning-shelter/
-Redirect 301 /projects-buildings http://designandmake.aaschool.ac.uk/projects/
-Redirect 301 /apply-now http://designandmake.aaschool.ac.uk/apply/
-Redirect 302 /programme http://designandmake.aaschool.ac.uk/about/
-Redirect 301 /faqs http://designandmake.aaschool.ac.uk/faq/
-Redirect 301 /2014-core-studio-projects http://designandmake.aaschool.ac.uk/project/tetrahedron/
-Redirect 301 /september-8-2013-tss-resuming-production http://designandmake.aaschool.ac.uk/project/timber-seasoning-shelter/
-Redirect 301 /facilities/workshop1 http://designandmake.aaschool.ac.uk/project/workshop/
-Redirect 301 /tss-film-safwat-williams https://vimeo.com/218598060
-Redirect 301 /video-above-hooke-park https://vimeo.com/157019485
